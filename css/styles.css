@@ -1,0 +1,124 @@
+html, body
+{
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* margin: 0 20px 0 20px;
+  background: #c4bcbc; */
+  background-attachment: fixed;
+  background-image: url("../img/white-rose-.jpg");
+  background-position: center;
+  height: 100%;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  /* image-resolution: from-image; */
+}
+
+/* main
+{
+  /* image-resolution: from-image; */
+  /* margin: 20px 0 20px 0;
+  padding: 5px;
+} */
+
+
+main h1
+{
+  font-family: Lobster;
+  text-shadow: 3px 3px #999;
+  text-transform: capitalize;
+  animation: move 10s linear infinite;
+}
+
+main h3
+{
+  color: #cc0b83;
+  font-family: Lobster;
+  text-transform: capitalize;
+}
+
+main p, h6
+{
+  color: #7e5858;
+  font-family: serif, monospace;
+  text-transform: capitalize;
+}
+
+section h1
+{
+  color: #cc0b83;
+  font-family: serif, monospace;
+  /* text-shadow: 3px 3px #999; */
+  text-transform: capitalize;
+}
+
+.card
+{
+  background: #cc0b83;
+  color: #fff;
+  font-family: Lobster;
+}
+
+.btn-violet
+{
+  background: #cc0b83;
+  color: #fff;
+  font-family: Lobster;
+}
+
+footer p
+{
+  font-size: 12px;
+  color: #000;
+  text-align: center;
+  font-family: monospace;
+}
+
+footer a
+{
+  text-decoration: none;
+}
+
+footer span
+{
+  color: #c1008b;
+}
+
+footer span:hover
+{
+  animation: move 5s linear infinite;
+}
+
+@keyframes move {
+  0%
+  {
+    color: #b81279;
+  }
+  10%
+  {
+    color: #f10bcc;
+  }
+  20%
+  {
+    color: #6cd410;
+  }
+  40%
+  {
+    color: #d1db14;
+  }
+  60%
+  {
+    color: #eb0094;
+  }
+  80%
+  {
+    color: #f10bcc;
+  }
+  100%
+  {
+    color: #b81279;
+  }
+
+}
