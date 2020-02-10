@@ -102,7 +102,17 @@
     </item>
     
     <item>
-      <title>Harga Paket&#34;</title>
+      <title>Frequently Asked Questions</title>
+      <link>https://slahircybertech.com/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://slahircybertech.com/faq/</guid>
+      <description>Berapa biaya yang harus dikeluarkan untuk pembuatan website ?
+ Harga mulai dari 120rb /bulan sampai dengan 300rb /bulan.</description>
+    </item>
+    
+    <item>
+      <title>Harga Paket</title>
       <link>https://slahircybertech.com/undangan/paket/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -126,6 +136,15 @@
       
       <guid>https://slahircybertech.com/author/mark-dinn/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet vulputate augue. Duis auctor lacus id vehicula gravida.</description>
+    </item>
+    
+    <item>
+      <title>Syarat Dan Ketentuan</title>
+      <link>https://slahircybertech.com/syarat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://slahircybertech.com/syarat/</guid>
+      <description></description>
     </item>
     
   </channel>
