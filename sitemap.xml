@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://slahircybertech.com/blog/are-you-doing-the-right-way/</loc>
-    <lastmod>2018-09-12T14:51:12+06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://slahircybertech.com/blog/</loc>
     <lastmod>2018-09-12T14:51:12+06:00</lastmod>
   </url>
@@ -20,41 +15,6 @@
   <url>
     <loc>https://slahircybertech.com/</loc>
     <lastmod>2018-09-12T14:51:12+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://slahircybertech.com/blog/login/</loc>
-    <lastmod>2018-09-12T12:52:36+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://slahircybertech.com/blog/simple-blog-post-1/</loc>
-    <lastmod>2018-09-12T12:52:36+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://slahircybertech.com/blog/simple-blog-post-2/</loc>
-    <lastmod>2018-09-12T12:52:36+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://slahircybertech.com/blog/simple-blog-post-3/</loc>
-    <lastmod>2018-09-12T12:52:36+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://slahircybertech.com/blog/simple-blog-post-4/</loc>
-    <lastmod>2018-09-12T12:52:36+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://slahircybertech.com/blog/simple-blog-post-5/</loc>
-    <lastmod>2018-09-12T12:52:36+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://slahircybertech.com/blog/simple-blog-post-6/</loc>
-    <lastmod>2018-09-12T12:52:36+06:00</lastmod>
   </url>
   
   <url>
@@ -80,6 +40,10 @@
   
   <url>
     <loc>https://slahircybertech.com/author/john-doe/</loc>
+  </url>
+  
+  <url>
+    <loc>https://slahircybertech.com/blog/artificial/</loc>
   </url>
   
   <url>
