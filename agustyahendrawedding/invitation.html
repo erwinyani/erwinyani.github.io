@@ -504,7 +504,7 @@
 
 
 
-			
+
 			<div class="row">
 				<div class="col-md-12 animate-box">
 					<div class='swiper-container'>
@@ -527,7 +527,7 @@
 									</p>
 								</div>
 							</div>
-							
+
 
 							<div class='swiper-slide'>
 								<div
@@ -592,80 +592,80 @@
 	<!-- akhir testimonials -->
 
 	<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script>
 
-		<script>
-			var firebaseConfig = {
-				apiKey: "AIzaSyDfIUqQzViPtPUzJ3d5jfsEoNp7Ab9-V24",
-				authDomain: "projest-wedding.firebaseapp.com",
-				databaseURL: "https://projest-wedding.firebaseio.com",
-				projectId: "projest-wedding",
-				storageBucket: "projest-wedding.appspot.com",
-				messagingSenderId: "435552037956",
-				appId: "1:435552037956:web:6f66a60abbce88a1e9e011",
-				measurementId: "G-E90MYH7X0G"
-			};
-			// Initialize Firebase
-			firebase.initializeApp(firebaseConfig);
-			// firebase.analytics();
+	<script>
+		var firebaseConfig = {
+			apiKey: "AIzaSyDfIUqQzViPtPUzJ3d5jfsEoNp7Ab9-V24",
+			authDomain: "projest-wedding.firebaseapp.com",
+			databaseURL: "https://projest-wedding.firebaseio.com",
+			projectId: "projest-wedding",
+			storageBucket: "projest-wedding.appspot.com",
+			messagingSenderId: "435552037956",
+			appId: "1:435552037956:web:6f66a60abbce88a1e9e011",
+			measurementId: "G-E90MYH7X0G"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+		// firebase.analytics();
 
-			function klik() {
+		function klik() {
 
-				firebase.database().ref('admin').push({
-					name: document.getElementById('userName').value,
-					message: document.getElementById('userMessage').value
-				});
-				alert('Terimkasih Pesan Telah Terkirim');
-			}
+			firebase.database().ref('admin').push({
+				name: document.getElementById('userName').value,
+				message: document.getElementById('userMessage').value
+			});
+			alert('Terimkasih Pesan Telah Terkirim');
+		}
 
-		</script>
+	</script>
 
-		<!-- Attending -->
+	<!-- Attending -->
 
-		<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_2247.jpg);">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>Are You Attending?</h2>
+	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_2247.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Are You Attending?</h2>
 
-					</div>
 				</div>
-				<div class="row animate-box">
-					<div class="col-md-10 col-md-offset-1">
+			</div>
+			<div class="row animate-box">
+				<div class="col-md-10 col-md-offset-1">
 
 
-						<div style='width:90%; margin-left:5%; margin-right:5%;'>
-							<!-- <div id='myAlert' class="alert alert-success close" role="alert" aria-hidden='true'>
+					<div style='width:90%; margin-left:5%; margin-right:5%;'>
+						<!-- <div id='myAlert' class="alert alert-success close" role="alert" aria-hidden='true'>
 								Message Successfuly
 							</div> -->
-							<!-- <form> -->
-							<input type='hidden' name='id_event' value='247'>
+						<!-- <form> -->
+						<input type='hidden' name='id_event' value='247'>
 
-							<div class='form-group' style='display:block; width:100%;'>
-								<input type="text" class="form-control fullname" id="userName" placeholder="Full Name"
-									required>
+						<div class='form-group' style='display:block; width:100%;'>
+							<input type="text" class="form-control fullname" id="userName" placeholder="Full Name"
+								required>
 
-							</div>
-
-							<div style='clear:both;margin-bottom:5px;'></div>
-							<div class='form-group' style='display:block; width:100%;'>
-								<textarea class="form-control message" id="userMessage" placeholder="Enter Message"
-									cols="30" rows="10" required></textarea>
-							</div>
-							<div style='clear:both;margin-bottom:5px;'></div>
-							<div style='width:100%;'>
-								<button id='success-alert' onclick='klik()' class='btn btn-block success-alert'
-									style='color:white; background-color:#F14E95;' data-dismiss='alert'
-									aria-label='Close'>CONFIRM</button>
-							</div>
-							<!-- </form> -->
 						</div>
 
+						<div style='clear:both;margin-bottom:5px;'></div>
+						<div class='form-group' style='display:block; width:100%;'>
+							<textarea class="form-control message" id="userMessage" placeholder="Enter Message"
+								cols="30" rows="10" required></textarea>
+						</div>
+						<div style='clear:both;margin-bottom:5px;'></div>
+						<div style='width:100%;'>
+							<button id='success-alert' onclick='klik()' class='btn btn-block success-alert'
+								style='color:white; background-color:#F14E95;' data-dismiss='alert'
+								aria-label='Close'>CONFIRM</button>
+						</div>
+						<!-- </form> -->
 					</div>
+
 				</div>
 			</div>
 		</div>
+	</div>
 
 	<!-- Akhir Attending -->
 
@@ -735,6 +735,17 @@
 
 	<script>
 		var swiper = new Swiper('.swiper-container', {
+
+			spaceBetween: 30,
+			centeredSlides: true,
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
