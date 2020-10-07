@@ -500,6 +500,41 @@
 								</div>
 							</div>
 
+							<div class='swiper-slide'>
+								<div
+									style='width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%'>
+									<h3 style='text-transform:capitalize;'>
+										Asyifa Tri Ramadani
+										<span
+											style='display:block; font-family: "Work Sans", Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;'>
+
+										</span>
+									</h3>
+									<p style='font-size:14px; margin-top:15px;'>
+										Semoga samawa 💕
+									</p>
+								</div>
+							</div>
+
+
+
+							<div class='swiper-slide'>
+								<div
+									style='width:80%; font-size:14px; text-align:center; margin-left:10%;margin-right:10%'>
+									<h3 style='text-transform:capitalize;'>
+										Iis rosdiana dan lepek
+										<span
+											style='display:block; font-family: "Work Sans", Arial, sans-serif; font-size:12px; margin-top:5px; text-transform:lowercase;'>
+
+										</span>
+									</h3>
+									<p style='font-size:14px; margin-top:15px;'>
+										Smoga samawa dan lancar2 smpe hari H aminnn❤
+									</p>
+								</div>
+							</div>
+
+
 						</div>
 					</div>
 
@@ -521,150 +556,159 @@
 
 
 
-				</div>
 			</div>
 		</div>
-		<!-- akhir friend wishes -->
+	</div>
+	<!-- akhir friend wishes -->
 
-		<!-- akhir testimonials -->
-		<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script>
+	<!-- akhir testimonials -->
+	<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script>
 
-		<script>
-			var firebaseConfig = {
-				apiKey: "AIzaSyDfIUqQzViPtPUzJ3d5jfsEoNp7Ab9-V24",
-				authDomain: "projest-wedding.firebaseapp.com",
-				databaseURL: "https://projest-wedding.firebaseio.com",
-				projectId: "projest-wedding",
-				storageBucket: "projest-wedding.appspot.com",
-				messagingSenderId: "435552037956",
-				appId: "1:435552037956:web:6f66a60abbce88a1e9e011",
-				measurementId: "G-E90MYH7X0G"
-			};
-			// Initialize Firebase
-			firebase.initializeApp(firebaseConfig);
-			// firebase.analytics();
+	<script>
+		var firebaseConfig = {
+			apiKey: "AIzaSyDfIUqQzViPtPUzJ3d5jfsEoNp7Ab9-V24",
+			authDomain: "projest-wedding.firebaseapp.com",
+			databaseURL: "https://projest-wedding.firebaseio.com",
+			projectId: "projest-wedding",
+			storageBucket: "projest-wedding.appspot.com",
+			messagingSenderId: "435552037956",
+			appId: "1:435552037956:web:6f66a60abbce88a1e9e011",
+			measurementId: "G-E90MYH7X0G"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+		// firebase.analytics();
 
-			function klik() {
+		function klik() {
 
-				firebase.database().ref('admin').push({
-					name: document.getElementById('userName').value,
-					message: document.getElementById('userMessage').value
-				});
-				alert('Terimkasih Pesan Telah Terkirim');
-			}
+			firebase.database().ref('admin').push({
+				name: document.getElementById('userName').value,
+				message: document.getElementById('userMessage').value
+			});
+			alert('Terimkasih Pesan Telah Terkirim');
+		}
 
-		</script>
+	</script>
 
-		<!-- Attending -->
+	<!-- Attending -->
 
-		<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_2247.jpg);">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>Are You Attending?</h2>
+	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_2247.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Are You Attending?</h2>
 
-					</div>
 				</div>
-				<div class="row animate-box">
-					<div class="col-md-10 col-md-offset-1">
+			</div>
+			<div class="row animate-box">
+				<div class="col-md-10 col-md-offset-1">
 
 
-						<div style='width:90%; margin-left:5%; margin-right:5%;'>
-							<!-- <div id='myAlert' class="alert alert-success close" role="alert" aria-hidden='true'>
+					<div style='width:90%; margin-left:5%; margin-right:5%;'>
+						<!-- <div id='myAlert' class="alert alert-success close" role="alert" aria-hidden='true'>
 								Message Successfuly
 							</div> -->
-							<!-- <form> -->
-							<input type='hidden' name='id_event' value='247'>
+						<!-- <form> -->
+						<input type='hidden' name='id_event' value='247'>
 
-							<div class='form-group' style='display:block; width:100%;'>
-								<input type="text" class="form-control fullname" id="userName" placeholder="Full Name"
-									required>
+						<div class='form-group' style='display:block; width:100%;'>
+							<input type="text" class="form-control fullname" id="userName" placeholder="Full Name"
+								required>
 
-							</div>
-
-							<div style='clear:both;margin-bottom:5px;'></div>
-							<div class='form-group' style='display:block; width:100%;'>
-								<textarea class="form-control message" id="userMessage" placeholder="Enter Message"
-									cols="30" rows="10" required></textarea>
-							</div>
-							<div style='clear:both;margin-bottom:5px;'></div>
-							<div style='width:100%;'>
-								<button id='success-alert' onclick='klik()' class='btn btn-block success-alert'
-									style='color:white; background-color:#F14E95;' data-dismiss='alert'
-									aria-label='Close'>CONFIRM</button>
-							</div>
-							<!-- </form> -->
 						</div>
 
+						<div style='clear:both;margin-bottom:5px;'></div>
+						<div class='form-group' style='display:block; width:100%;'>
+							<textarea class="form-control message" id="userMessage" placeholder="Enter Message"
+								cols="30" rows="10" required></textarea>
+						</div>
+						<div style='clear:both;margin-bottom:5px;'></div>
+						<div style='width:100%;'>
+							<button id='success-alert' onclick='klik()' class='btn btn-block success-alert'
+								style='color:white; background-color:#F14E95;' data-dismiss='alert'
+								aria-label='Close'>CONFIRM</button>
+						</div>
+						<!-- </form> -->
 					</div>
+
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<!-- Akhir Attending -->
+	<!-- Akhir Attending -->
 
-		<footer id="fh5co-footer" role="contentinfo">
-			<div class="container">
+	<footer id="fh5co-footer" role="contentinfo">
+		<div class="container">
 
-				<div class="row copyright">
-					<div class="col-md-12 text-center">
-						<p>
-							<small class="block"></small>
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						<small class="block"></small>
 
-							<small class="block"><b>THANK YOU</b></small>
-						</p>
-						<p>
-							<small class="block">&copy; 2020 Agustya & Hendra Wedding Day</small>
-							<small>Content by <a href="https://slahircybertech.com/" target="_blank">Slahir
-									Technology</a></small>
-						</p>
-						<p>
-							<ul class="fh5co-social-icons">
-								<li><a href="#"><i class="icon-twitter"></i></a></li>
-								<li><a href="#"><i class="icon-facebook"></i></a></li>
-								<li><a href="#"><i class="icon-linkedin"></i></a></li>
-								<li><a href="#"><i class="icon-dribbble"></i></a></li>
-							</ul>
-						</p>
-					</div>
+						<small class="block"><b>THANK YOU</b></small>
+					</p>
+					<p>
+						<small class="block">&copy; 2020 Agustya & Hendra Wedding Day</small>
+						<small>Content by <a href="https://slahircybertech.com/" target="_blank">Slahir
+								Technology</a></small>
+					</p>
+					<p>
+						<ul class="fh5co-social-icons">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-linkedin"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+						</ul>
+					</p>
 				</div>
-
 			</div>
-		</footer>
 
-		<div class="gototop js-top">
-			<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 		</div>
+	</footer>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
 
 
 
-		<!-- jQuery -->
-		<script src="js/jquery.min.js"></script>
-		<!-- jQuery Easing -->
-		<script src="js/jquery.easing.1.3.js"></script>
-		<!-- Bootstrap -->
-		<script src="js/bootstrap.min.js"></script>
-		<!-- Waypoints -->
-		<script src="js/jquery.waypoints.min.js"></script>
-		<!-- Carousel -->
-		<script src="js/owl.carousel.min.js"></script>
-		<!-- countTo -->
-		<script src="js/jquery.countTo.js"></script>
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
 
-		<!-- Stellar -->
-		<script src="js/jquery.stellar.min.js"></script>
-		<!-- Magnific Popup -->
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<script src="js/magnific-popup-options.js"></script>
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
 
-		<script src="js/main.js"></script>
+	<script src="js/main.js"></script>
 
-		<script src="js/waktu.js"></script>
-		<script src="js/musicback.js"></script>
-		<script src="js/swiper.js"></script>
-		<!-- <script src="js/db.js"></script> -->
+	<script src="js/waktu.js"></script>
+	<script src="js/musicback.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<!-- <script src="js/db.js"></script> -->
+
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	</script>
 
 </body>
 
