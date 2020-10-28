@@ -2,9 +2,9 @@ Hitung();
 function Hitung() {
 
     tahun = 2020;
-    bulan = 10;
-    hari = 17;
-    jam = 08;
+    bulan = 12;
+    hari = 06;
+    jam = 8;
     menit = 00;
     detik = 00;
 
@@ -34,5 +34,5 @@ function mulaiHitung(hari, jam, menit, detik, tahun) {
     document.getElementById("hitungmundur2").innerHTML = "" + jam + "<span>HOURS</span>";
     document.getElementById("hitungmundur3").innerHTML = "" + menit + "<span>MINUTES</span>";
     document.getElementById("hitungmundur4").innerHTML = "" + detik + "<span>SECONDS</span>";
-    // Hitung();
+    Hitung();
 }
