@@ -30,9 +30,9 @@ function Hitung() {
 }
 
 function mulaiHitung(hari, jam, menit, detik, tahun) {
-    document.getElementById("hitungmundur1").innerHTML = "" + hari + "<span>DAYS</span>";
-    document.getElementById("hitungmundur2").innerHTML = "" + jam + "<span>HOURS</span>";
-    document.getElementById("hitungmundur3").innerHTML = "" + menit + "<span>MINUTES</span>";
-    document.getElementById("hitungmundur4").innerHTML = "" + detik + "<span>SECONDS</span>";
+    document.getElementById("hitungmundur1").innerHTML = "" + hari + "<span>Hari</span>";
+    document.getElementById("hitungmundur2").innerHTML = "" + jam + "<span>Jam</span>";
+    document.getElementById("hitungmundur3").innerHTML = "" + menit + "<span>Menit</span>";
+    document.getElementById("hitungmundur4").innerHTML = "" + detik + "<span>Detik</span>";
     Hitung();
 }
