@@ -6,10 +6,19 @@
     <description>Recent content on Slahir Technology | Maksimalkan Bisnis Anda Dengan Satu Sentuhan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Apr 2020 10:07:21 +0600</lastBuildDate>
+    <lastBuildDate>Mon, 04 Jan 2021 10:07:21 +0600</lastBuildDate>
     
 	<atom:link href="https://slahirtech.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pengertian dan Istilah JAMstack?</title>
+      <link>https://slahirtech.com/blog/jamstack/</link>
+      <pubDate>Mon, 04 Jan 2021 10:07:21 +0600</pubDate>
+      
+      <guid>https://slahirtech.com/blog/jamstack/</guid>
+      <description>Untuk membahas istilah JAMstack ini scope nya sangat luas, kamu harus mengerti dulu apa itu static web dan dynamic web.</description>
+    </item>
     
     <item>
       <title>Layanan live chat gratis menggunakan tawk.to</title>
@@ -18,15 +27,6 @@
       
       <guid>https://slahirtech.com/blog/livechat/</guid>
       <description>jika kamu ingin website tampil beda dengan layanan live chat yang gratisan dengan fitur super lengkap?</description>
-    </item>
-    
-    <item>
-      <title>Pengertian dan Istilah JAMstack?</title>
-      <link>https://slahirtech.com/blog/jamstack/</link>
-      <pubDate>Sat, 18 Apr 2020 10:07:21 +0600</pubDate>
-      
-      <guid>https://slahirtech.com/blog/jamstack/</guid>
-      <description>Untuk membahas istilah JAMstack ini scope nya sangat luas, kamu harus mengerti dulu apa itu static web dan dynamic web.</description>
     </item>
     
   </channel>
