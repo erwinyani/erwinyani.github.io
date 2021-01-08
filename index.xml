@@ -6,13 +6,23 @@
     <description>Recent content on Slahir Technology | Maksimalkan Bisnis Anda Dengan Satu Sentuhan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Jan 2021 10:07:21 +0600</lastBuildDate>
+    <lastBuildDate>Fri, 08 Jan 2021 10:07:21 +0600</lastBuildDate>
     
 	<atom:link href="https://slahirtech.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Pengertian dan Istilah JAMstack?</title>
+      <title>Bikin website tanpa koding, emang bisa?</title>
+      <link>https://slahirtech.com/blog/page-builder/</link>
+      <pubDate>Fri, 08 Jan 2021 10:07:21 +0600</pubDate>
+      
+      <guid>https://slahirtech.com/blog/page-builder/</guid>
+      <description>Membuat website elegan tanpa koding tinggal drag and drop menggunakan Page Builder.
+Apasih page builder? secara umum pengertian page builder adalah perangkat lunak atau alat untuk membangun sebuah halaman statis, biasanya page builder banyak terdapat di Content Management System seperti Wordpress (CMS).</description>
+    </item>
+    
+    <item>
+      <title>Pengertian dan istilah JAMstack?</title>
       <link>https://slahirtech.com/blog/jamstack/</link>
       <pubDate>Mon, 04 Jan 2021 10:07:21 +0600</pubDate>
       
