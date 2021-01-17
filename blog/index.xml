@@ -6,10 +6,19 @@
     <description>Recent content in Berita Terbaru on Slahir Technology | Maksimalkan Bisnis Anda Dengan Satu Sentuhan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Jan 2021 10:07:21 +0600</lastBuildDate>
+    <lastBuildDate>Thu, 14 Jan 2021 10:07:21 +0600</lastBuildDate>
     
 	<atom:link href="https://slahirtech.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>DE (Desktop Environment) di GNU/Linux</title>
+      <link>https://slahirtech.com/blog/desktop-environment/</link>
+      <pubDate>Thu, 14 Jan 2021 10:07:21 +0600</pubDate>
+      
+      <guid>https://slahirtech.com/blog/desktop-environment/</guid>
+      <description>Bagi kamu pengguna sistem operasi Linux (GNU/Linux) pasti sudah tak asing dengan yang namanya Desktop Environment?</description>
+    </item>
     
     <item>
       <title>Bikin website tanpa koding, emang bisa?</title>
