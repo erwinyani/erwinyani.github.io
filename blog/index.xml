@@ -6,10 +6,19 @@
     <description>Recent content in Berita Terbaru on Slahir Technology | Maksimalkan Bisnis Anda Dengan Satu Sentuhan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Jan 2021 10:07:21 +0600</lastBuildDate>
+    <lastBuildDate>Wed, 20 Jan 2021 10:07:21 +0600</lastBuildDate>
     
 	<atom:link href="https://slahirtech.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pegertian dan cara kerja web service?</title>
+      <link>https://slahirtech.com/blog/web-service/</link>
+      <pubDate>Wed, 20 Jan 2021 10:07:21 +0600</pubDate>
+      
+      <guid>https://slahirtech.com/blog/web-service/</guid>
+      <description>Pernah mendengar istilah web service? pasti kamu sedang mencari - cari apa sih web service?, apa ya fungsinya?</description>
+    </item>
     
     <item>
       <title>DE (Desktop Environment) di GNU/Linux</title>
