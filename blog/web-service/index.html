@@ -142,7 +142,7 @@ if (!doNotTrack) {
 
 
         <h3 class="mb-4">Pegertian dan cara kerja web service?</h3>
-        <div class="content"><p>Pernah mendengar istilah web service? pasti kamu sedang mencari - cari apa sih web service?, apa ya fungsinya? dan bagaimana sih cara kerjanya?</p>
+        <div class="content"><p>Pernah mendengar istilah web service? pasti kamu sedang mencari - cari apa sih web service?, apa ya keuntungan menggunakan web service? dan bagaimana sih cara kerjanya?</p>
 <p><strong><em>Web Service</em></strong> (Layanan Web) adalah sebuah teknologi aplikasi <em>Multi-Platform</em> yang menjembatani antara dua atau lebih aplikasi web untuk berkomunikasi dan bertukar informasi melalui jaringan internet.</p>
 <blockquote>
 <p>contoh: aplikasi yang dibuat menggunakan bahasa <em>Java</em> bisa berkomunikasi dengan aplikasi yang dibuat menggunakan <em>Python</em>, begitu sebaliknya. Jadi web service tidak terikat dengan platform, arsitektur ataupun bahasa pemrograman.</p>
@@ -161,7 +161,7 @@ menggunakan akun <em>facebook twitter</em> dan <em>yahoo</em> untuk sinkronsasi.
 Ini dapat terjadi karena facebook,twitter, yahoo dan lain - lain memiliki suatu <em>web service</em>
 yang memungkinkan sistem lain dapat menggunakan akun mereka untuk login. Ide dasaranya
 adalah ketika ada dua sistem yaitu A dan B secara masing-masing berdiri secara mandiri. Pada
-sistem example.com disana terdapat database <em>username</em> dan <em>pasword</em>. Pada sistem book.com terdapat script form yang nantinya memanggil <em>username</em> dan <em>password</em> dari sistem example.com. Dalam proses login, script pada <em>login form</em> tersebut mengirim parameter <em>username</em> dan <em>password</em> ke sistem example.com untuk dicek validitasnya melalui GET Request. Selanjutnya di dalam sistem example.com terdapat script untuk membaca <em>username</em> dan <em>password</em> yang berasal dari GET request dari sistem B untuk diproses validitasnya. Sebagai responnya, sistem  A  akan  mengenerate sebuah dokumen XML yang di dalamnya  terdapat sebuah  data  misalkan  berbentuk TRUE  atau  FALSE.  Bernilai TRUE  jika <em>username</em> dan <em>password</em> tersebut valid, dan FALSE jika tidak valid. Selanjutnya disistem B respon tersebut dibaca, jika data yang dibaca bernilai TRUE maka proses login berhasil dan jika FALSE
+sistem example.com disana terdapat database <em>username</em> dan <em>pasword</em>. Pada sistem book.com terdapat script form yang nantinya memanggil <em>username</em> dan <em>password</em> dari sistem example.com. Dalam proses login, script pada <em>login form</em> tersebut mengirim parameter <em>username</em> dan <em>password</em> ke sistem example.com untuk dicek validitasnya melalui GET Request. Selanjutnya di dalam sistem example.com terdapat script untuk membaca <em>username</em> dan <em>password</em> yang berasal dari GET request dari sistem B untuk diproses validitasnya. Sebagai responnya, sistem  A  akan  men-<em>generate</em> sebuah dokumen XML yang di dalamnya  terdapat sebuah  data  misalkan  berbentuk TRUE  atau  FALSE.  Bernilai TRUE  jika <em>username</em> dan <em>password</em> tersebut valid, dan FALSE jika tidak valid. Selanjutnya disistem B respon tersebut dibaca, jika data yang dibaca bernilai TRUE maka proses login berhasil dan jika FALSE
 maka login gagal.</p>
 <p>Contoh lainnya:</p>
 <ol>
@@ -211,17 +211,49 @@ atau layanan apa  yang ditawarkan perusahaan berikut dengan detil teknis bagaima
 mengaksesnya. Informasi tersebut ditulis dalam bentuk file-file WSDL.</p>
 </li>
 </ol>
-<p>Yang lebih baru saat ini adalah REST (REpresentational State Transfer. REST adalah gaya arsitektur perngkat lunak untuk membuat web service yang bersifat stateless, jadi setiap kali request harus menyertakan semua data dan parameter dengan lengkap. REST ini bersifat client dan server. Client REST akan meminta sesuatu ke REST server, REST server kemudian akan memberikan response, client REST ini kemudian akan menampilkan hasilnya atau melakukan pemrosesan yang lain.</p>
+<p>Yang lebih baru saat ini adalah REST (REpresentational State Transfer). REST adalah gaya arsitektur perngkat lunak untuk membuat web service yang bersifat stateless, jadi setiap kali request harus menyertakan semua data dan parameter dengan lengkap. REST ini bersifat client dan server. Client REST akan meminta sesuatu ke REST server, REST server kemudian akan memberikan response, client REST ini kemudian akan menampilkan hasilnya atau melakukan pemrosesan yang lain.</p>
 <h5 id="karakteristik-web-service">Karakteristik web service?</h5>
 <ol>
-<li>Berbasi XML/JSON.</li>
+<li>Berbasis XML/JSON.</li>
 <li><em>Loosely Coupled</em>.</li>
 <li><em>Coarse-Grained</em>.</li>
 <li>Mendukung prosedur panggilan jauh / <em>Support Remote Prosedure Calls</em>(RPCs).</li>
 <li><em>Platform Neutral</em>.</li>
 </ol>
+<h5 id="keuntungan-web-service">Keuntungan web service?</h5>
+<p>Web service sebagai salah satu alternatif dalam pengembangan aplikasi  <em>N-tier</em>, ini adalah teknologi yang memisahkan antara server database, aplikasi dan client. Beberapa keuntungan lain yang didapat dari penerapan web service yaitu:</p>
+<ol>
+<li>
+<p>Dengan format XML yang telah menjadi salah satu standar pertukaran data, penggunaan web service akan banyak memudahkan untuk pertukaran data dalam berbagai sistem dengan berbeda platform. Apabila kita membuat web service dengan teknologi Python, maka fungsi-fungsi yang ada dalam web service tersebut dapat kita baca dengan menggunakan sistem lain yang berbeda sama sekali dari Python, misalkan menggunakan Dart, Javascript ataupun PHP.</p>
+</li>
+<li>
+<p>Web service di support oleh pemain utama dalam dunia TI seperti Microsoft (NET), SUN (Open Net Environment  – ONE), IBM (Web Service Conceptual Architecture  – WSCA), W3C (Web Service Workshop), Oracle (Web Service Broker), Hewlett-Packard (Web Service Platform).</p>
+</li>
+<li>
+<p>Dalam penerapan  N-tier, untuk layer bisnis atau  <em>apllication logic</em>  dapat diterapkan dengan web service, sehingga di sisi client kita tidak direpotkan dengan instalasi layer bisnis seperti  halnya  dll, corba, atau jenis  yang lain. Dengan web service,  method atau function yang telah kita buat dapat dipergunakan berulang kali bahkan untuk keperluan aplikasi yang  berbeda (reusable function). Penerapan lebih jauh dari web service adalah  Service Oriented Architecture (SOA) dengan web service sebagai dasarnya.</p>
+</li>
+<li>
+<p>Web service dibangun berdasarkan  text base document dengan format XML, sehingga untuk komunikasi data relatif lebih ringan dibandingkan dengan aplikasi yang mengakses langsung database melalui suatu jaringan. Apabila kita menerapkan web service untuk aplikasi yang menggunakan  desktop application  based, kita tidak perlu melakukan instalasi konektor database seperti misalnya menggunakan ODBC, OLEDB, ataupun jenis  data provider lain. Dengan jumlah client yang cukup banyak, tentunya akan sangat merepotkan apabila kita harus melakukan instalasi satu persatu untuk konektor database. Dengan menggunakan web service kita cukup menambahkan  web service reference  di client, sedangkan untuk koneksi databasenya hanya perlu dilakukan di server web servicenya.</p>
+</li>
+<li>
+<p>Komunikasi data melalui web service dilakukan melalui  http  atau  <em>Internet protocol</em>  terbuka lainnya. Hal ini sangat memudahkan karena  protocol tersebut adalah protocol yang umum dipakai.</p>
+</li>
+</ol>
 <h5 id="kesimpulan">Kesimpulan</h5>
+<p>Menurut W3C (World Wide Web Consortium) <em>Web Service</em> adalah sistem perangkat lunak yang didesain untuk mendukung <em>interoperabilitas</em> interkasi mesin ke mesin melalui jaringan internet. <em>Interoperabilitas</em> merupakan suatu kemampuan dua atau lebih sistem untuk dapat melakukan pertukaran informasi. Mengembangkan perangkat lunak sistem informasi yang dapat mendukung interoperabilitas merupakan salah satu hal yang tidak mudah dilakukan. Interoperabilitas sistem melibatkan berbagai komponen yang heterogen. Arsitektur sistem yang dibangun dari komponen <em>heterogen</em>, seperti : platform, sistem operasi, bahasa pemgroman yang berbeda  dan basis data, harus dapat diintegrasikan guna menyediakan layanan yang optimal.</p>
 <p>Itulah penjelasan sederhana mengenai <em>web service</em>, bila kamu tertarik dan ingin mengetahui lebih dalam silahkan cari referensinya di internet.</p>
+<p>sumber:</p>
+<ol>
+<li>
+<p><a href="https://www.researchgate.net/publication/339688153_SEJARAH_WEB_SERVICE_BESERTA_ARSITEKTUR_DAN_PENGGUNAANNYA">https://www.researchgate.net/publication/339688153_SEJARAH_WEB_SERVICE_BESERTA_ARSITEKTUR_DAN_PENGGUNAANNYA</a></p>
+</li>
+<li>
+<p><a href="https://bambangsuhartono.wordpress.com/2014/12/28/web-service-dan-manfaatnya-pada-perusahaan/">https://bambangsuhartono.wordpress.com/2014/12/28/web-service-dan-manfaatnya-pada-perusahaan/</a></p>
+</li>
+<li>
+<p><a href="https://www.w3.org/TR/ws-arch/">https://www.w3.org/TR/ws-arch/</a></p>
+</li>
+</ol>
 </div>
         
 
