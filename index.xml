@@ -6,10 +6,19 @@
     <description>Recent content on Slahir Technology | Maksimalkan Bisnis Anda Dengan Satu Sentuhan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Jan 2021 10:07:21 +0600</lastBuildDate>
+    <lastBuildDate>Sat, 30 Jan 2021 10:07:21 +0600</lastBuildDate>
     
 	<atom:link href="https://slahirtech.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Application Programming Interface(API) dan Web API?</title>
+      <link>https://slahirtech.com/blog/api/</link>
+      <pubDate>Sat, 30 Jan 2021 10:07:21 +0600</pubDate>
+      
+      <guid>https://slahirtech.com/blog/api/</guid>
+      <description>Berbicara mengenai API dan Web API / Web Service seperti yang sudah kita bahas sebelumnya, scope nya sangat luas.</description>
+    </item>
     
     <item>
       <title>Pegertian dan cara kerja web service?</title>
@@ -17,7 +26,7 @@
       <pubDate>Wed, 20 Jan 2021 10:07:21 +0600</pubDate>
       
       <guid>https://slahirtech.com/blog/web-service/</guid>
-      <description>Pernah mendengar istilah web service? pasti kamu sedang mencari - cari apa sih web service?, apa ya keuntungan menggunakan web service?</description>
+      <description>Pernah mendengar istilah web service? pasti kamu sedang mencari-cari apa sih web service?, apa ya keuntungan menggunakan web service?</description>
     </item>
     
     <item>
