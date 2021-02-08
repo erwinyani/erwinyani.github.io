@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Virtual Machine vs Container?</title>
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <meta name="description"
+    content="Dalam ilmu komputer, virtualisasi berarti membuat dan menjalankan versi maya didalam sumber daya fisik. Hingga saat ini sumber daya yang dapat divirtualisasikan antara lain adalah perangkat keras komputer, media penyimpanan data, sistem operasi, jaringan, dan lain sebagainya.">
+  
+  <meta name="author" content="Erwin Aris Prayogo">
+  <meta name="generator" content="Hugo 0.69.2" />
+
+
+  
+  <link rel="stylesheet" href="https://slahirtech.com/plugins/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://slahirtech.com/plugins/themify-icons/themify-icons.css">
+  
+  <link rel="stylesheet" href="https://slahirtech.com/plugins/slick/slick.css">
+  
+
+
+  
+  <link href="https://slahirtech.com/scss/style.min.css" rel="stylesheet" media="screen" />
+
+
+
+
+  <link rel="shortcut icon" href="https://slahirtech.com/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://slahirtech.com/images/favicon.png" type="image/x-icon">
+  
+
+
+  <meta property="og:title" content="Virtual Machine vs Container?" />
+<meta property="og:description" content="Dalam ilmu komputer, virtualisasi berarti membuat dan menjalankan versi maya didalam sumber daya fisik. Hingga saat ini sumber daya yang dapat divirtualisasikan antara lain adalah perangkat keras komputer, media penyimpanan data, sistem operasi, jaringan, dan lain sebagainya." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://slahirtech.com/blog/vm-vs-container/" />
+<meta property="og:image" content="https://slahirtech.com/images/blog/docker.png" />
+<meta property="article:published_time" content="2021-02-01T10:07:21+06:00" />
+<meta property="article:modified_time" content="2021-02-01T10:07:21+06:00" />
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'G-ZLV8DKTVHH', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-ZLV8DKTVHH', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head><style>
+	 
+
+	.float-icon {
+		height: 50px;
+		width: 141px;
+		background-color: #114e1a7e;
+		border: 2px solid #2db742;
+		border-radius: 10px;
+		position: fixed;
+		padding: 4px;
+		color: #0cda2b;
+		right: 65px;
+		bottom: 25px;
+		z-index: 9999;
+	}
+
+	.float-icon:hover {
+		color: #02b91d;
+	}
+
+	.wa {
+		height: 50px;
+		width: 50px;
+		 
+		position: fixed;
+		 
+		right: 10px;
+		bottom: 26px;
+		z-index: 9999;
+	}
+</style>
+
+
+<body>
+
+	<a
+		href="https://api.whatsapp.com/send?phone=+6288213128081&text=Hi,%20saya%20mau%20buat%20website%20custom%20dong%20!!!%20Bagaimana%20caranya%20?">
+
+		<img class="wa" src="/images/whatsapp.svg" alt="whatsapp">
+		<div class="float-icon">
+			<em><strong>Yuk buat website sekarang!</strong></em>
+		</div>
+
+	</a>
+
+
+	
+	<script type="text/javascript">
+		var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+		(function () {
+			var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+			s1.async = true;
+			s1.src = 'https://embed.tawk.to/5fe52a68a8a254155ab630bd/1eqbirb2c';
+			s1.charset = 'UTF-8';
+			s1.setAttribute('crossorigin', '*');
+			s0.parentNode.insertBefore(s1, s0);
+		})();
+	</script>
+	<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <a class="navbar-brand" href="https://slahirtech.com/">
+        
+        <img width="200px" class="img-fluid" src="https://slahirtech.com/images/logo.svg" alt="Slahir Technology | Maksimalkan Bisnis Anda Dengan Satu Sentuhan">
+        
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav mx-auto">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://slahirtech.com/blog">Blog</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://slahirtech.com/pricing">Paket Harga</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://slahirtech.com/tentang">Tentang Kami</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        
+        <a href="https://slahirtech.com/contact" class="btn btn-sm btn-primary ml-3">Kontak</a>
+        
+        
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+
+
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <img src="https://slahirtech.com/images/blog/docker.png" alt="Virtual Machine vs Container?" class="img-fluid w-100 rounded mb-4">
+
+
+        
+
+
+        <h3 class="mb-4">Virtual Machine vs Container?</h3>
+        <div class="content"><p>Teknologi virtualisasi atau <em>virtualization</em> yang semakin berkembang pesat sejak tahun 1960-an, dan telah diaplikasikan ke beberapa aspek komputer dari keseluruhan sistem komputer sampai sebuah kemampuan atau komponen individu.</p>
+<p>Asal kata <em>virtual</em> yang berarti &ldquo;sebenarnya, sebetulnya, yang sesungguhnya&rdquo; sendiri berasal dari bahasa latin yaitu &ldquo;<em>virtus, virtue</em>&quot;. Menurut sosiolog kanada <strong><em>Roberts MacArthur Shields</em></strong> dalam bukunya <em>The Virtual</em> menyebutkan bahwa <strong><em>virtual</em></strong> adalah sesuatu yang <em>real</em> (nyata) namun tidak <em>concrete / konkret</em> (benar-benar ada, berwujud, dapat dilihat atau diraba). Ia hanya sebuah kualitas dan bukan sesuatu yang aktual. Bahkan ada juga yang menyebut <em>&ldquo;real but not actual, ideal but not abstract&rdquo;</em>.</p>
+<p>Dalam ilmu komputer, <em>virtualisasi</em> berarti membuat dan menjalankan versi maya didalam sumber daya fisik. Hingga saat ini sumber daya yang dapat <em>divirtualisasikan</em> antara lain adalah perangkat keras komputer, media penyimpanan data, sistem operasi, jaringan, dan lain sebagainya. Sedangkan menurut <em><strong>Alan Murphy</strong></em> dalam papernya <em>Virtualization Defined – Eight Different Ways</em> setidaknya ada 8 istilah dalam penerapan virtualisasi:</p>
+<ol>
+<li><em>Operating System Virtualization</em>.</li>
+<li><em>Application Server Virtualization</em>.</li>
+<li><em>Application Virtualization</em>.</li>
+<li><em>Management Virtualization</em>.</li>
+<li><em>Network Virtualization</em>.</li>
+<li><em>Hardware Virtualization</em>.</li>
+<li><em>Storage Virtualization</em>.</li>
+<li><em>Service Virtualization</em>.</li>
+</ol>
+<p><strong>Kelebihan teknologi virtualisasi:</strong></p>
+<ul>
+<li>Meminimalisir biaya investasi <em>hardware</em>. Tidak perlu menambah komputer, <em>server</em> dan <em>pheriferal</em> secara fisik, penambahan kapasitas memori dan <em>upgrade</em> spesifikasi <em>cpu(central processing unit) / processor</em> itupun jika diperlukan.</li>
+<li>Mudah untuk di <em>backup &amp; recovery</em>. Mesin virtual dapat disimpan dalam 1 buah image yang berisi seluruh konfigurasi sistem, jika terjadi masalah atau <em>crash</em> kita cukup <em>restore</em> data dari hasil <em>backup-an</em> terakhir.</li>
+<li>Standarisasi <em>hardware</em>. Virtualisasi melakukan emulasi dan enkapsulasi hardware sehingga proses pengenalan dan pemindahan suatu spesifikasi hardware tertentu tidak menjadi masalah</li>
+<li>Kemudahan <em>maintenance</em> &amp; pengelolaan. Jumlah server yang lebih sedikit otomatis akan mengurangi waktu dan biaya untuk mengelola.</li>
+</ul>
+<p><strong>Kekurangan teknologi virtualisasi:</strong></p>
+<ul>
+<li>
+<p>Satu pusat masalah. Virtualisasi bisa dianalogikan dengan menempatkan semua telur didalam 1 keranjang. Ini artinya jika server induk bermasalah, semua sistem virtual machine didalamnya tidak bisa digunakan. Hal ini bisa diantisipasi dengan menyediakan fasilitas backup secara otomatis dan periodik atau dengan menerapkan prinsip fail over/clustering.</p>
+</li>
+<li>
+<p>Spesifikasi <em>hardware</em>. Virtualisasi membutuhkan spesifikasi server yang lebih tinggi untuk menjalankan server induk dan mesin virtual didalamnya.</p>
+</li>
+<li>
+<p>Satu pusat serangan. Penempatan semua server dalam satu komputer akan menjadikannya sebagai target serangan. Jika hacker mampu menerobos masuk kedalam sistem induk, ada kemungkinan ia mampu menyusup kedalam server- server virtual dengan cara menggunakan informasi yang ada pada server induk.</p>
+</li>
+</ul>
+<h2 id="apa-itu-virtual-machine">Apa itu virtual machine?</h2>
+<p><em>virtual machine</em> atau mesin virtual adalah implementasi perangkat lunak dari sebuah mesin komputer yang dapat menjalankan program sama seperti layaknya sebuah komputer asli. Mesin virtual pada mulanya didefinisikan oleh <strong><em>Gerard J. Popek</em></strong> dan <strong><em>Robert P. Goldberg</em></strong> pada tahun 1974 sebagai sebuah duplikat yang efisien dan terisolasi dari suatu mesin asli. Pada masa sekarang ini, mesin-mesin virtual dapat men-simulasikan perangkat keras walaupun tidak ada perangkat keras aslinya sama sekali.</p>
+<p>Dalam teknologi mesin virtual juga berkembang teknologi <em>Hypervisor</em>, <strong><em>Hypervisor</em></strong> adalah sebuah teknik virtualisasi yang memungkinkan beberapa sistem operasi untuk berjalan bersamaan pada sebuah <em>host</em>. Dikatakan teknik virtualisasi karena OS yang ada bukanlah sebuah OS yang sesungguhnya, hanya sebuah mesin virtual saja. Tugas dari <em>hypervisor</em> adalah untuk mengatur setiap sistem operasi tersebut sesuai dengan gilirannya agar tidak mengganggu satu dengan yang lainnya. Terkadang, <em>hypervisor</em> juga disebut sebagai <em>Virtual Machine Management (VMM) / Virtual Machine Monitor</em>, sesuai dengan tugasnya dalam mengatur beberapa mesin virtual.</p>
+<p>Jenis-jenis <em>Hypervisor</em> sebagai berikut:</p>
+<p><strong>1. Hypervisor Type 1 (Native / Baremetal Architecture)</strong></p>
+<p><em>Hypervisor</em> tipe ini berjalan langsung diatas perangkat keras <em>server</em>, artinya tidak di perlukan sistem operasi lain untuk menjalankan <em>hypervisor</em> tipe 1 ini . dengan begitu <em>hypervisor</em> memiliki akses langsung ke hardware tanpa harus melewati OS. Contoh <em>hypervisor</em> tipe 1 adalah <em>VMware ESXi</em>. Kalau dilihat dari teknik virtualisasi yang digunakan, jenis satu ini adalah jenis <em>hardware assisted</em>.</p>
+<p><strong>2. Hypervisor Type 2 (Hosted Architecture)</strong></p>
+<p><em>Hypervisor</em> tipe ini  berperan sebagai perangkat lunak untuk menjalankan dan mengatur mesin virtual. Akses <em>resource hardware</em> yang dibutuhkan oleh meisn virtual harus melewati OS.Contoh <em>hypervisor</em> tipe 2 adalah <em>VMware Server</em>. Berbeda dengan tipe 1, tipe 2 ini lebih cenderung ke OS <em>assisted hypervisor</em> (<em>para virtualization</em>) dan juga <em>full virtualization</em>.</p>
+<p>Macam-macam mesin virtual yang bisa digunakan di komputer pribadi:</p>
+<ol>
+<li><em>VirtualBox</em>.</li>
+<li><em>Windows Virtual PC</em>.</li>
+<li><em>QEMU</em>.</li>
+<li><em>V2 Cloud</em>.</li>
+<li><em>VMWare</em>.</li>
+<li><em>Hyper-V</em>.</li>
+</ol>
+<p>mesin virtual untuk <em>server</em>:</p>
+<ol>
+<li>
+<p><em>KVM (Kernel-Based Virtual Machine)</em>. Salah satu teknologi virtualisasi (<em>hypervisor</em>) yang dikembangkan oleh Linux.</p>
+</li>
+<li>
+<p><em>OpenVZ</em>. Virtualisasi pada tingkat OS (<em>Operating System</em>) yang berbasis pada kernel Linux yang telah dimodifikasi yang memungkinkan sebuah server fisik untuk menjalankan beberapa <em>instances</em> yang disebut <em>containers</em>.</p>
+</li>
+<li>
+<p><em>XenServer(XEN)</em>. <em>Server virtualization</em> platform dari <em>citrix</em>, untuk mengoptimalkan <em>Windows</em> dan <em>linux virtual server</em>.</p>
+</li>
+<li>
+<p><em>OpenStack</em>. Perangkat lunak bebas dan sumber terbuka untuk <em>cloud computing</em>, sebagian besar digunakan sebagai <em>Infrastructure as a Service</em> (IaaS), di mana server virtual dan sumber daya lain tersedia untuk pelanggan.</p>
+</li>
+</ol>
+<h4 id="apa-pengertian-container">Apa pengertian container?</h4>
+<p><em>Container</em> disini berbeda dengan peti kemas ya, namun memiliki makna yang hampir serupa yaitu sebagai &ldquo;wadah atau pengemas&rdquo;. <strong><em>container</em></strong> adalah unit standar perangkat lunak yang mengemas kode dan semua dependensinya sehingga aplikasi berjalan dengan cepat dan andal dari satu lingkungan komputasi ke lingkungan komputasi lainnya.</p>
+<p>Sederhananya, <em>container</em> adalah sebuah perangkat lunak terisolasi yang mengemas dan menjalankan paket aplikasi mencakup (<em>binaries</em>, <em>configuration file</em>, <em>dependencies</em>, <em>libraries</em>) secara langsung didalam sistem operasi.</p>
+<p><strong>Kelebihan menggunakan container:</strong></p>
+<ul>
+<li>
+<p><strong>Portabilitas:</strong> Sebuah kontainer membuat paket perangkat lunak yang dapat dieksekusi yang dipisahkan dari (tidak terikat atau bergantung pada) sistem operasi host.</p>
+</li>
+<li>
+<p><strong>Kecepatan:</strong> Kontainer sering kali disebut sebagai &ldquo;<em>lightweight</em>&quot;, artinya kontainer berbagi kernel sistem operasi (OS) mesin dan tidak macet dengan <em>overhead</em> tambahan ini.</p>
+</li>
+<li>
+<p><strong>Efisiensi:</strong> Perangkat lunak yang berjalan didalam lingkungan kontainer membagikan kernel OS mesin, dan lapisan aplikasi di dalam container dapat dibagikan di seluruh kontainer.</p>
+</li>
+<li>
+<p><strong>Kemudahan pengelolaan:</strong> Platform orkestrasi kontainer mengotomatiskan peng-instalan, pen-skalaan, dan pengelolaan beban kerja dan layanan dalam kontainer.</p>
+</li>
+</ul>
+<p><strong>Kekurangan menggunakan container:</strong></p>
+<ul>
+<li><strong>Fleksibilitas dalam sistem operasi:</strong> Jika Anda ingin menjalankan kontainer dengan sistem operasi yang berbeda, Anda harus memulai server baru.</li>
+</ul>
+<p><strong>Ada 2 jenis kontainer yang dapat diklasifikasikan menurut penggunaannya sebagai berikut:</strong></p>
+<ol>
+<li>
+<p>Kontainer berbasis sistem operasi (<em>OS Container</em>), yakni kontainer yang memberikan isolasi pada level sistem operasi dan memanfaatkan kernel yang sama dari suatu induk, contohnya adalah <em>LXC</em>, <em>OpenVZ</em>, <em>Linux VServer</em>, <em>BSD Jails (chroot jail)</em> and <em>Solaris zones</em>.</p>
+</li>
+<li>
+<p>Kontainer berbasis aplikasi (<em>Application Container</em>), yakni kontainer yang memberikan isolasi pada level aplikasi dengan memanfaatkan beberapa komponen yang ada pada sistem operasi induk, ditambah beberapa komponen pada kontainer-kontainer lain yang menjadi basis dari berjalannya sebuah aplikasi, contohnya adalah <em>Docker</em> dan <em>Rocket (rkt)</em>.</p>
+</li>
+</ol>
+<h4 id="jadi-apa-sih-docker">jadi apa sih docker?</h4>
+<p><strong>Docker</strong> adalah sebuah aplikasi sumber terbuka (<em>open source</em>) yang digunakan untuk menyatukan beberapa file dalam sebuah program perangkat lunak. File-file pendukung yang ada disebut juga <em>image</em> dan dikumpulkan atau dikemas menjadi satu dalam sebuah wadah yang dinamakan <em>container</em>. Container ini menjadi sebuah alat untuk penyimpanan file dan docker merupakan platform yang dibangun dengan teknologi <em>container</em> sebagai dasarnya.</p>
+<p>Pada acara PyCon US tahun 2013 docker diperkenalkan dan pada tahun 2014 bulan juni docker dirilis. Docker dikembangkan oleh <strong>Solomon Hykes</strong> bersama rekannya <strong>Andrea Luzzardi</strong> dan <strong>Francois-Xavier Bourlet</strong>. Pada saat itu Docker merupakan proyek internal <em>dotCloud</em>. Alhasil, saat ini docker sudah menjadi platform populer di lingkungan para <em>developer</em> di berbagai belahan dunia meskipun belum terlalu populer di Indonesia.</p>
+<p><strong>Fitur-fitur docker sebagai berikut:</strong></p>
+<ul>
+<li><strong>Docker Engine</strong>, digunakan untuk membangun <em>docker images</em> dan membuat kontainer docker.</li>
+<li><strong>Docker Hub</strong>, <em>registry</em> yang digunakan untuk berbagai macam <em>docker images</em>.</li>
+<li><strong>Docker Compose</strong>, digunakan untuk mendefinisikan aplikasi menggunakan banyak kontainer docker.</li>
+<li><strong>Docker untuk Mac</strong>, memungkinkan menjalankan kontainer docker pada Mac.</li>
+<li><strong>Docker untuk Linux</strong>, memungkinkan menjalankan kontainer docker pada Linux.</li>
+<li><strong>Docker untuk Windows</strong>, memungkinkan menjalankan kontainer docker pada Windows.</li>
+</ul>
+<p>Apakah dengan menjalankan docker saja sudah cukup? belum tentu, bagaimana dengan perusahaan <em>startup</em> yang sudah besar tentu mereka mempunyai banyak <em>service</em> bukan?</p>
+<p>Untuk menjalankan <em>container</em>, tentunya membutuhkan sebuah aplikasi. Aplikasi yang paling umum digunakan adalah docker. Docker di instal di <em>server</em>, kemudian kita jalankan <em>docker image</em> dan terbentuklah kontainer dan aplikasi kita sudah berjalan dan bisa digunakan.</p>
+<p>Tetapi untuk kebutuhan <strong><em>production</em>?</strong>, tidak cukup hanya sekedar aplikasi bisa berjalan, pasti membutuhkan sistem yang handal, yang mampu membuat aplikasi kita selalu <em>available</em>, tidak ada <em>downtime</em>, memiliki <em>security</em> yang handal, bisa menerima banyak <em>traffic</em>, dan sebagainya. Maka diperlukan lah sebuah sistem yang bisa mengatur dan mengelola / mengelompokan aplikasi kontainer, sistem ini disebut <em>cluster management</em>. <em>cluster management and deployment</em> yang paling umum digunakan adalah <strong>Kubernetes</strong>.</p>
+<p><strong>Apa sih Kubernetes?</strong></p>
+<p><strong>Kubernetes</strong> adalah <em>platform</em> sumber termuka yang digunakan untuk manajemen kontainer. <em>Kubernetes</em> adalah singkatatan dari <strong>K8s</strong> dimana huruf &ldquo;<em>K</em>&rdquo; merupakan huruf depan, angka &ldquo;<em>8</em>&rdquo; merupakan jumlah huruf dari “<em>ubernete</em>” dan &ldquo;<em>s</em>&rdquo; adalah huruf terakhir. Sehingga <em>Kubernetes</em> = <em>K8s</em>.</p>
+<p><em>Kubernetes</em> merupakan sistem orkestrasi sumber terbuka untuk mengotomatiskan pengelolaan, penempatan, pen-skalaan, dan perutean kontainer yang telah menjadi populer di kalangan pengembang dan tim operasi TI (Teknologi Informasi) dalam beberapa tahun terakhir.</p>
+<h4 id="kesimpulan">Kesimpulan</h4>
+<p>Kecanggihan teknologi <em>virtual machine</em> dan <em>container</em> merupakan bagian dari virtualisasi modern yang berkembang saat ini. Jika kamu berfikir aplikasi-aplikasi yang kamu pakai hanya sekedar untuk <em>browsing</em>, mengirim pesan, menambah teman, menambah <em>follower</em>, jualan, atau mencari ojol saja padahal ada sistem dan <em>service</em> rumit yang berjalan dibelakang layar.</p>
+</div>
+        
+
+<head>
+    <style>
+        .share ul {
+            list-style-type: none;
+        }
+
+        .share ul li {
+            display: block;
+            float: left;
+            padding: 10px;
+        }
+
+        .share ul li i {
+            font-size: 20px;
+        }
+
+        .share ul li a {
+            color: #378ae9;
+        }
+
+        .share ul li a:hover {
+            color: #2376d4;
+        }
+    </style>
+</head>
+<div class="share">
+    <span style="color: #378ae9;">Bagikan:</span>
+    <ul>
+        
+        
+        <li>
+            <a href="//twitter.com/share?url=https%3a%2f%2fslahirtech.com%2fblog%2fvm-vs-container%2f&amp;text=Virtual%20Machine%20vs%20Container%3f&amp;via="
+                target="_blank" class="share-btn twitter">
+                <i class="ti-twitter-alt"></i>
+                
+            </a>
+        </li>
+        
+
+
+        
+        
+
+        <li>
+            <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fslahirtech.com%2fblog%2fvm-vs-container%2f" target="_blank"
+                class="share-btn facebook">
+                <i class="ti-facebook"></i>
+                
+            </a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="//reddit.com/submit?url=https%3a%2f%2fslahirtech.com%2fblog%2fvm-vs-container%2f&amp;title=Virtual%20Machine%20vs%20Container%3f" target="_blank"
+                class="share-btn reddit">
+                <i class="ti-reddit"></i>
+                
+            </a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fslahirtech.com%2fblog%2fvm-vs-container%2f&amp;title=Virtual%20Machine%20vs%20Container%3f" target="_blank"
+                class="share-btn linkedin">
+                <i class="ti-linkedin"></i>
+                
+            </a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="whatsapp://send?text=https%3a%2f%2fslahirtech.com%2fblog%2fvm-vs-container%2f&amp;title=Virtual%20Machine%20vs%20Container%3f" target="_blank"
+                class="share-btn whatsapp">
+                <i class="ti-sharethis-alt"></i>
+                
+            </a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fslahirtech.com%2fblog%2fvm-vs-container%2f&amp;description=Virtual%20Machine%20vs%20Container%3f"
+                target="_blank" class="share-btn pinterest">
+                <i class="ti-pinterest"></i>
+                
+            </a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="mailto:?subject=Check out this post by Erwin%20Aris%20Prayogo&amp;body=https%3a%2f%2fslahirtech.com%2fblog%2fvm-vs-container%2f"
+                target="_blank" class="share-btn email">
+                <i class="ti-email"></i>
+                
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+	<footer class="bg-light section pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 mb-5">
+        
+        <div class="h3 mb-4">Tentang</div>
+        <ul class="list-unstyled footer-list">
+          
+          <li><a href="https://slahirtech.com/tentang">Tentang Kami</a></li>
+          
+          <li><a href="https://slahirtech.com/blog">Blog</a></li>
+          
+          <li><a href="https://slahirtech.com/images/pdf/proposal_penawaran.pdf">Download Proposal</a></li>
+          
+        </ul>
+        
+      </div>
+      <div class="col-md-3 col-sm-6 mb-5">
+        
+        <div class="h3 mb-4">Developer</div>
+        <ul class="list-unstyled footer-list">
+          
+          <li><a href="https://slahirtech.com/">Company Profile</a></li>
+          
+          <li><a href="https://slahirtech.com/">Bumdes</a></li>
+          
+          <li><a href="https://slahirtech.com/">Web Akademi</a></li>
+          
+        </ul>
+        
+      </div>
+      <div class="col-md-3 col-sm-6 mb-5">
+        
+        <div class="h3 mb-4">Bantuan</div>
+        <ul class="list-unstyled footer-list">
+          
+          <li><a href="https://slahirtech.com/faq">FAQ</a></li>
+          
+          <li><a href="https://slahirtech.com/privacy-policy">Privacy Policy</a></li>
+          
+          <li><a href="https://slahirtech.com/syarat-dan-ketentuan">Syarat &amp; Ketentuan</a></li>
+          
+        </ul>
+        
+      </div>
+      <div class="col-md-3 col-sm-6 mb-5">
+        
+        Slahir Technology
+        <p class="mb-4"><i class='ti-location-pin'></i> Blok D Kel. Marga Agung Kec. Jati Agung - Lampung Selatan
+<br> <i class='ti-location-pin'></i> Jatisari, Lampung - Selatan <br> <i class='ti-mobile'> 088213128081</i></p>
+
+        
+        <ul class="list-inline social-icons">
+          
+          <li class="list-inline-item"><a href="//www.facebook.com/sharer/sharer.php?u=%7b%7b%20.Permalink%20%7d%7d"><i class="ti-facebook"></i></a></li>
+          
+          <li class="list-inline-item"><a href="//twitter.com/share?url=%7b%7b%20.Permalink%20%7d%7d&amp;amp;text=%7b%7b%20.Title%20%7d%7d&amp;amp;via=%7b%7b%20.Site.Social.twitter%20%7d%7d"><i class="ti-twitter-alt"></i></a></li>
+          
+          <li class="list-inline-item"><a href="#"><i class="ti-skype"></i></a></li>
+          
+          <li class="list-inline-item"><a href="//www.linkedin.com/shareArticle?url=%7b%7b%20.Permalink%20%7d%7d&amp;amp;title=%7b%7b%20.Title%20%7d%7d"><i class="ti-linkedin"></i></a></li>
+          
+        </ul>
+        
+      </div>
+    </div>
+    <div class="border-top border-default text-center py-4 mt-4">
+      <small class="content">© 2021 Dibuat dengan <span style='color: #378ae9'>♥</span> di Marga - Agung &amp; Jatisari, Lampung - Selatan</small>
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="https://slahirtech.com/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://slahirtech.com/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://slahirtech.com/plugins/slick/slick.min.js"></script>
+
+
+
+
+<script src="https://slahirtech.com/js/script.min.js"></script></body>
+
+</html>

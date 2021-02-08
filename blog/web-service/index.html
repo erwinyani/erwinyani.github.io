@@ -178,6 +178,7 @@ if (!doNotTrack) {
 
 
 
+
 <section class="section">
   <div class="container">
     <div class="row">
@@ -194,14 +195,14 @@ if (!doNotTrack) {
 <blockquote>
 <p>contoh: aplikasi yang dibuat menggunakan bahasa <em>Java</em> bisa berkomunikasi dengan aplikasi yang dibuat menggunakan <em>Python</em>, begitu sebaliknya. Jadi web service tidak terikat dengan platform, arsitektur ataupun bahasa pemrograman.</p>
 </blockquote>
-<h6 id="jadi-bagaimana-cara-kerja-web-service">Jadi bagaimana cara kerja web service?</h6>
+<h4 id="jadi-bagaimana-cara-kerja-web-service">Jadi bagaimana cara kerja web service?</h4>
 <blockquote>
 <p>Contoh sederhananya seperti ini, ada dua orang yang tinggal satu kos; Bambang dan Mark. Bambang hanya bisa berbahasa Indonesia sedangkan Mark hanya bisa berbahasa inggris, nah agar mereka bisa berkomunikasi tentu harus ada orang yang bisa berbahasa keduanya (Indonesia dan inggris). Namun karena mereka sama-sama baru tinggal di kos tersebut, mereka bingung untuk mengerti bahasa masing-masing, sedangkan di kos itu tidak ada orang selain mereka berdua. Kemudian Bambang menghubungi/menelpon teman yang bisa berbahasa Indonesia dan Inggris, sebut saja namanya Wahyu.</p>
 </blockquote>
 <p>Nah proses komunikasi yang dilakukan Bambang dengan Wahyu melalui sambungan telpon untuk membantu menterjemahkan pertanyaan dari Mark disebut <strong>Web Service</strong>, karena <em>web service</em> memerlukan jaringan internet untuk pertukaran data/informasinya.</p>
 <p>Pada umumnya, <em>request</em> client ke server dalam format SOAP atau REST yang ditransfer didalam jaringan melalui protokol-protokol standard seperti HTTP / HTTPS.</p>
 <p>sedangkan, <em>response</em> dari server ke client direpresentasikan dalam bentuk teks berformat XML atau JSON.</p>
-<h5 id="contoh-penerapan-web-service">Contoh penerapan web service?</h5>
+<h4 id="contoh-penerapan-web-service">Contoh penerapan web service?</h4>
 <p>Contoh implementasi <em>web service</em> seperti sistem login pada beberapa <em>website</em> yang dapat
 menggunakan akun <em>facebook twitter</em> dan <em>yahoo</em> untuk sinkronsasi.</p>
 <p>Penjelasan :
@@ -218,7 +219,7 @@ maka login gagal.</p>
 <li>Aplikasi Gojek, Grab, Uber dll.</li>
 <li>Dan masih banyak lagi.</li>
 </ol>
-<h5 id="3-entitas-arsitektur-web-service">3 entitas arsitektur web service?</h5>
+<h4 id="3-entitas-arsitektur-web-service">3 entitas arsitektur web service?</h4>
 <ol>
 <li>
 <p>Service Provider(peminta Layanan), merupakan pemilik Web Service yang berfungsi menyediakan kumpulan operasi dari Web Service.</p>
@@ -230,7 +231,7 @@ maka login gagal.</p>
 <p>Service Registry(Daftart Layanan), merupakan tempat dimana Service provider mempublikasikan layanannya. Pada arsitektur Web Service, Service registry bersifat optional. Teknologi web service memungkinkan kita dapat menghubungkan berbagai jenis software yang memiliki platform dan sistem operasi yang berbeda.</p>
 </li>
 </ol>
-<h5 id="komponen-pembentuk-web-service-menurut-w3c">Komponen pembentuk web service menurut W3C?</h5>
+<h4 id="komponen-pembentuk-web-service-menurut-w3c">Komponen pembentuk web service menurut W3C?</h4>
 <ol>
 <li>
 <p>SOAP (Simple Object Access Protocol)
@@ -259,7 +260,7 @@ mengaksesnya. Informasi tersebut ditulis dalam bentuk file-file WSDL.</p>
 </li>
 </ol>
 <p>Yang lebih baru saat ini adalah REST (REpresentational State Transfer). REST adalah gaya arsitektur perngkat lunak untuk membuat web service yang bersifat stateless, jadi setiap kali request harus menyertakan semua data dan parameter dengan lengkap. REST ini bersifat client dan server. Client REST akan meminta sesuatu ke REST server, REST server kemudian akan memberikan response, client REST ini kemudian akan menampilkan hasilnya atau melakukan pemrosesan yang lain.</p>
-<h5 id="karakteristik-web-service">Karakteristik web service?</h5>
+<h4 id="karakteristik-web-service">Karakteristik web service?</h4>
 <ol>
 <li>Berbasis XML/JSON.</li>
 <li><em>Loosely Coupled</em>.</li>
@@ -267,7 +268,7 @@ mengaksesnya. Informasi tersebut ditulis dalam bentuk file-file WSDL.</p>
 <li>Mendukung prosedur panggilan jauh / <em>Support Remote Prosedure Calls</em>(RPCs).</li>
 <li><em>Platform Neutral</em>.</li>
 </ol>
-<h5 id="keuntungan-web-service">Keuntungan web service?</h5>
+<h4 id="keuntungan-web-service">Keuntungan web service?</h4>
 <p>Web service sebagai salah satu alternatif dalam pengembangan aplikasi  <em>N-tier</em>, ini adalah teknologi yang memisahkan antara server database, aplikasi dan client. Beberapa keuntungan lain yang didapat dari penerapan web service yaitu:</p>
 <ol>
 <li>
@@ -286,7 +287,7 @@ mengaksesnya. Informasi tersebut ditulis dalam bentuk file-file WSDL.</p>
 <p>Komunikasi data melalui web service dilakukan melalui  http  atau  <em>Internet protocol</em>  terbuka lainnya. Hal ini sangat memudahkan karena  protocol tersebut adalah protocol yang umum dipakai.</p>
 </li>
 </ol>
-<h5 id="kesimpulan">Kesimpulan</h5>
+<h4 id="kesimpulan">Kesimpulan</h4>
 <p>Menurut W3C (World Wide Web Consortium) <em>Web Service</em> adalah sistem perangkat lunak yang didesain untuk mendukung <em>interoperabilitas</em> interkasi mesin ke mesin melalui jaringan internet. <em>Interoperabilitas</em> merupakan suatu kemampuan dua atau lebih sistem untuk dapat melakukan pertukaran informasi. Mengembangkan perangkat lunak sistem informasi yang dapat mendukung interoperabilitas merupakan salah satu hal yang tidak mudah dilakukan. Interoperabilitas sistem melibatkan berbagai komponen yang heterogen. Arsitektur sistem yang dibangun dari komponen <em>heterogen</em>, seperti : platform, sistem operasi, bahasa pemgroman yang berbeda  dan basis data, harus dapat diintegrasikan guna menyediakan layanan yang optimal.</p>
 <p>Itulah penjelasan sederhana mengenai <em>web service</em>, bila kamu tertarik dan ingin mengetahui lebih dalam silahkan cari referensinya di internet.</p>
 <p>sumber:</p>
