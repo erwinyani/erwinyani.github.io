@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Mengenal surface web, dark web dan deep web</title>
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <meta name="description"
+    content="Era digitalisasi, khususnya perkembangan _web_ yang kita kenal sekarang diibaratkan seperti fenomena gunung es. _Iceberg Phenomenon_ merujuk pada kondisi penampakan puncak gunung es di atas permukaan air yang sebenarnya merupakan bagian kecil dari bongkahan gunung es di bawah permukaan air yang tidak tampak dan jauh lebih besar.">
+  
+  <meta name="author" content="Erwin Aris Prayogo">
+  <meta name="generator" content="Hugo 0.69.2" />
+
+
+  
+  <link rel="stylesheet" href="https://slahirtech.com/plugins/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://slahirtech.com/plugins/themify-icons/themify-icons.css">
+  
+  <link rel="stylesheet" href="https://slahirtech.com/plugins/slick/slick.css">
+  
+
+
+  
+  <link href="https://slahirtech.com/scss/style.min.css" rel="stylesheet" media="screen" />
+
+
+
+
+  <link rel="shortcut icon" href="https://slahirtech.com/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://slahirtech.com/images/favicon.png" type="image/x-icon">
+  
+
+
+  <meta property="og:title" content="Mengenal surface web, dark web dan deep web" />
+<meta property="og:description" content="Era digitalisasi, khususnya perkembangan _web_ yang kita kenal sekarang diibaratkan seperti fenomena gunung es. _Iceberg Phenomenon_ merujuk pada kondisi penampakan puncak gunung es di atas permukaan air yang sebenarnya merupakan bagian kecil dari bongkahan gunung es di bawah permukaan air yang tidak tampak dan jauh lebih besar." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://slahirtech.com/blog/deep-web/" />
+<meta property="og:image" content="https://slahirtech.com/images/blog/deep-web.png" />
+<meta property="article:published_time" content="2021-02-14T10:07:21+06:00" />
+<meta property="article:modified_time" content="2021-02-14T10:07:21+06:00" />
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'G-ZLV8DKTVHH', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-ZLV8DKTVHH', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head><style>
+	 
+
+	.float-icon {
+		height: 50px;
+		width: 141px;
+		background-color: #114e1a7e;
+		border: 2px solid #2db742;
+		border-radius: 10px;
+		position: fixed;
+		padding: 4px;
+		color: #0cda2b;
+		right: 65px;
+		bottom: 25px;
+		z-index: 9999;
+	}
+
+	.float-icon:hover {
+		color: #ffffff;
+		background-color: #02b91d;
+		transition: 0.7s;
+	}
+
+	.wa {
+		height: 50px;
+		width: 50px;
+		 
+		position: fixed;
+		 
+		right: 10px;
+		bottom: 26px;
+		z-index: 9999;
+	}
+</style>
+
+
+<body>
+
+	<a
+		href="https://api.whatsapp.com/send?phone=+6288213128081&text=Hi,%20saya%20mau%20buat%20website%20custom%20dong%20!!!%20Bagaimana%20caranya%20?">
+
+		<img class="wa" src="/images/whatsapp.svg" alt="whatsapp">
+		<div class="float-icon">
+			<em><strong>Yuk buat website sekarang!</strong></em>
+		</div>
+
+	</a>
+
+
+	
+	<script type="text/javascript">
+		var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+		(function () {
+			var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+			s1.async = true;
+			s1.src = 'https://embed.tawk.to/5fe52a68a8a254155ab630bd/1eqbirb2c';
+			s1.charset = 'UTF-8';
+			s1.setAttribute('crossorigin', '*');
+			s0.parentNode.insertBefore(s1, s0);
+		})();
+	</script>
+	<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <a class="navbar-brand" href="https://slahirtech.com/">
+        
+        <img width="200px" class="img-fluid" src="https://slahirtech.com/images/logo.svg" alt="Slahir Technology | Maksimalkan Bisnis Anda Dengan Satu Sentuhan">
+        
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav mx-auto">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://slahirtech.com/blog">Blog</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://slahirtech.com/pricing">Paket Harga</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://slahirtech.com/tentang">Tentang Kami</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        
+        <a href="https://slahirtech.com/contact" class="btn btn-sm btn-primary ml-3">Kontak</a>
+        
+        
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+
+
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <img src="https://slahirtech.com/images/blog/deep-web.png" alt="Mengenal surface web, dark web dan deep web" class="img-fluid w-100 rounded mb-4">
+
+
+        
+
+
+        <h3 class="mb-4">Mengenal surface web, dark web dan deep web</h3>
+        <div class="content"><p>Era digitalisasi, khususnya perkembangan <em>web</em> yang kita kenal sekarang diibaratkan seperti fenomena gunung es. <em>Iceberg Phenomenon</em> merujuk pada kondisi penampakan puncak gunung es di atas permukaan air yang sebenarnya merupakan bagian kecil dari bongkahan gunung es di bawah permukaan air yang tidak tampak dan jauh lebih besar.</p>
+<p>Web sendiri merupakan www (<em>World Wide Web</em>), kita lebih mengenal dengan sebutan <em>web</em> saja. Teknologi Web adalah dokumen yang ditulis dalam format HTML (<em>Hyper Text Markup Language</em>), yang hampir selalu bisa diakses melalui http, yaitu protokol yang menyampaikan informasi dari server untuk ditampilkan kepada pengguna / <em>client</em> melalui <em>web browser</em>. Semua publikasi dari web tersebut dapat membentuk sebuah jaringan informasi yang sangat besar yang dapat diakses dengan menggunakan <em>internet</em>.</p>
+<h4 id="surface-web">Surface Web?</h4>
+<p><em>Surface Web</em> adalah situs web atau <em>web apps</em> yang umumnya bisa kita jelajahi melalui mesin pencari seperti <em>google</em>, <em>yandex</em>, <em>bing</em>, <em>yahoo!</em> dan lain-lain dengan menggunakan bantuan perangkat lunak peramban <em>google chrome</em>, <em>Mozilla Firefox</em>, <em>Safari</em>, <em>Microsoft Edge</em>, dan lain sebagainya.</p>
+<p>Web permukaan atau lebih dikenal <em>visible web</em> merupakan bagian dari www yang ter-index hanya sekitar 5-10% oleh <em>search engine</em>. Contoh:</p>
+<ul>
+<li>Wikipedia</li>
+<li>Facebook</li>
+<li>Twitter</li>
+<li>Tokopedia</li>
+<li>Youtube</li>
+<li>Termasuk situs <a href="https://slahirtech.com/">slahir technology</a> ini</li>
+</ul>
+<h4 id="deep-web">Deep Web?</h4>
+<p><em>Deep web</em> adalah bagian dari protokol <em>World Wide Web</em>, yang tidak dapat diindeks oleh mesin pencari dan terbatas atau tertutup, deep web memuat banyak sekali konten informasi terpendam yang sulit atau bahkan tidak bisa diakses oleh orang biasa. Contoh situs deep web sendiri beberapa di antaranya meliputi server lokal kampus, layanan apikasi pesan instan yang tidak terindeks mesin pencari, serta aplikasi online yang hanya bisa diakses oleh karyawan atau pekerja tertentu.</p>
+<p>Terminologi deep web terkadang digunakan sebagai sinonim untuk dark web, meskipun kedua hal ini sebenarnya berbeda. Tetap saja terminologi ‘deep web’ yang digunakan di beberapa bahasa bukanlah ‘dark web’.</p>
+<p>Istilah <em>deep web</em> pertama kali dikemukakan oleh <em>Mike Bregman</em> yang mengacu pada artikel yang diterbitkan pada bulan januari 1996 oleh <em>Frank Garcia</em>, dia mengatakan bahwa mencari informasi di internet pada saat ini dapat dibandingkan dengan menjaring ikan di permukaan laut, akan mendapatkan banyak ikan yang tertangkap di jaring, tetapi informasi yang sangat dalam tidak akan tertangkap.</p>
+<p>Kemudian berkembang menjadi istilah lain seperti <em>Hidden Web</em>, <em>Jack Oliver</em> dalam paper sebuah seminar mengenai Deep Web yang dipublikasikan dalam Jurnal Publikasi Elektronik, menyebutkan bahwa <em>Jill Ellsworth</em> menggunakan istilah <em>Invisible Web</em> atau web tak kasatmata pada tahun 1994 untuk mengacu kepada situs web yang tidak teregistrasi dengan mesin pencari web apapun.</p>
+<p>Jumlah invisible web belum pernah dapat ditetapkan, seperti halnya volume keseluruhan <em>Internet</em> itu sendiri juga sulit ditetapkan. Namun ada dugaan bahwa jumlah invisible web ini sudah melebihi jumlah yang <em>visible</em>. Demikian pula, kualitas kandungan informasi yang tidak terlacak ini mungkin saja lebih tinggi dari informasi yang mudah terlacak.</p>
+<p>Namun ukuran <em>Deep Web</em> berdasarkan <em>ekstrapolasi</em> yang dilakukan oleh <em>Universitas California, Berkeley</em> pada tahun 2001, memperkirakan bahwa <em>Deep Web</em> memiliki ukuran sekitar <strong>7,5 petabita</strong>. Ukuran yang lebih akurat disebutkan dalam penelitian yang dilakukan oleh <strong>He, et al</strong>. (2003) mendeteksi sekitar 300.000 situs deep web yang ada di seluruh web pada tahun 2004, dan menurut <em>Shestakov</em>, sekitar 14.000 situs deep web berada di bagian web Rusia pada tahun 2006.</p>
+<p><strong>Menurut Sherman dan Price (2001, 2003) ada empat kategori invisible web, yaitu:</strong> <sup><a href="https://digilib.undip.ac.id/2012/06/19/invisible-web/">https://digilib.undip.ac.id/2012/06/19/invisible-web/</a></sup></p>
+<ol>
+<li>
+<p>Web yang tersamar atau tersembunyi (<em>the opaque web</em>). Tergolong dalam kategori ini adalah sumber-sumber informasi di Internet yang sebenarnya dapat diindeks oleh mesin pencari, tetapi pengindeksan tetap tidak dilakukan. Ada beberapa alasan mengapa ini tidak dilakukan, dan salah satunya berkaitan dengan seberapa ‘dalam’ dan seberapa sering sebuah mesin menjelajah sumber-sumber di Internet (dikenal dengan istilah <em>crawling</em>). Sebuah halaman web seringkali terletak di jenjang paling ‘bawah’ atau paling ‘dalam’ dari serangkaian halaman yang tersusun secara hirarkis. Jika mesin pencari hanya mengindeks halaman-halaman terdepan dari sebuah web, maka tentu saja tidak seluruh isi web terindeks. Jika isi web yang tidak terindeks tersebut juga tidak terwakili oleh isi halaman-halaman depan yang sudah terindeks, maka praktis sebagian dari web ini tersembunyi dari mesin pencari. Selain itu, sebagian besar isi web bersifat dinamis, karena teknologi digital memungkinkan perubahan dan pergantian informasi secara amat cepat dan mudah. Jika perubahan-perubahan ini tidak terdeteksi, praktis informasi yang terkandung di dalamnya juga tak terlacak oleh mesin pencari. Seringkali ketidak-terlacakan ini disebabkan pula oleh kesenjangan waktu antara perubahan informasi dan pengindeksan. Hal lain yang dapat ‘menyembunyikan’ sebuah halaman web sebenarnya adalah akibat dari fasilitas mesin pencari yang menyediakan pilihan pencarian secara ‘mudah’ (basic), sementara pencarian dengan tingkat presisi yang lebih tinggi melalui pilihan advance searching kurang diminati para pengguna. Akibatnya, banyak informasi yang sebenarnya lebih relevan tak terlacak oleh mesin, atau diletakkan jauh di belakang dalam urutan hasil pencarian.</p>
+</li>
+<li>
+<p>Web yang aksesnya sengaja dibuat pribadi atau tidak untuk umum (<em>the private web</em>). Ini merupakan sumber-sumber informasi yang sebenarnya dapat diindeks, namun sengaja pula diabaikan oleh crawler (penjelajah yang dibuat oleh pengelola search engine) sebab pemilik sumber informasi ini memang tidak ingin milik mereka diindeks untuk umum. Biasanya ada katasandi (password) yang harus ditembus untuk mengakses sumber seperti ini, atau ada berkas robots.txt dan kategori “noindex” di dalam tag dokumen yang bersangkutan. Jadi, memang sumber-sumber informasi seperti ini sengaja dibuat tersembunyi oleh pemiliknya.</p>
+</li>
+<li>
+<p>Web yang aksesnya dibatasi oleh hak pemakaian (<em>the proprietory web</em>). Sama halnya dengan private web, sumberdaya informasi ini secara sengaja disediakan untuk kalangan terbatas yang memerlukan registrasi untuk memakainya. Sebagian dari situs yang menyediakan sumberdaya ini menarik bayaran, tetapi ada juga yang hanya memerlukan registrasi tanpa menarik bayaran. Search Engine tentunya tidak dapat mengakses dan mengindeks isi dari situs-situs itu karena tidak memiliki mekanisme registrasi.</p>
+</li>
+<li>
+<p>Web yang benar-benar tak terlacak (<em>the truly invisible web</em>). Seperti ditengarai oleh Hsieh-Yee (2001), hampir semua search engine dibuat untuk mengindeks halaman HTML yang statis. Padahal halaman yang demikian ini hanyalah merupakan sebagian dari isi Internet. Nah, halaman-halaman yang non-statis, yang berubah-ubah sesuai program tertentu atau yang berubah setelah berinteraksi dengan pengguna, dikategorikan sebagai “benar-benar tak terlacak” alias truly invisible. Termasuk pula dalam kategori ini sumberdaya digital yang baru terbentuk secara dinamis di saat pengguna melakukan sesuatu tindakan khusus (misalnya kumpulan artikel yang dihimpun dan diambil berdasarkan satu permintaan khusus) atau sumberdaya yang secara otomatis dihasilkan oleh kegiatan antar-mesin seperti yang terjadi pada proses Web service . Ini disebut juga sebagai deep web (Bergman, 2001). Demikian pula, beberapa jenis objek digital yang berbentuk postcript , flash, atau streaming video (misalnya dalam bentuk siaran televisi digital) belum dapat sepenuhnya diindeks oleh search engine sehingga praktis tak terlacak. Selain faktor teknis di pihak search engine, juga ada faktor yang ditimbulkan oleh perilaku penggunaan Internet itu sendiri sebagai reaksi atas kinerja search engine yang sudah menjadi kebiasaan. Misalnya, kebiasaan pengguna Internet membuka hanya dua halaman di layar ketika memeriksa hasil pencarian, atau kebiasaan membatasi pemeriksaan hanya sampai 10 temuan. Padahal berbagai search engine lebih sering menemukan ribuan atau ratusan ribu lokasi sumberdaya digital. Tentu saja, fasilitas penjajaran (ranking) menjadi amat menentukan kebiasaan tersebut.</p>
+</li>
+</ol>
+<p><strong>Contoh dari invisible web sebagai berikut:</strong></p>
+<ul>
+<li>Database situs web dinamis (web dinamis: database perusahaan, pemerintahan, akademik, medis, dll).</li>
+<li>Situs web yang tidak tertaut dan dilindungi kata sandi.</li>
+<li>Akses jaringan terbatas yang membutuhkan teknologi khusus.</li>
+</ul>
+<h4 id="dark-web">Dark Web?</h4>
+<p><em>Dark web</em> merupakan bagian kecil dari internet yang sama sekali tidak terindeks oleh mesin pencari bahkan untuk menjelajahnya pun membutuhkan <em>search engine</em> khusus. Dark Web atau Dark Net tidak berafiliasi dengan organisasi, bisnis, atau pemerintah yang berkuasa atas bagian ini atau dapat menerapkan peraturan tertentu. Hal ini menjadi alasan mengapa dark web sering kali diasosiasikan dengan aktivitas ilegal.</p>
+<p>Situs-situs web yang ada di dark web menyembunyikan alamat IP mereka dari internet. Untuk melakukan hal tersebut, dibutuhkan program atau teknologi khusus yang juga akan menyembunyikan alamat IP pengunjung. Alat khusus tersebut wajib digunakan untuk mengakses dark web. Selain itu, semua situs dark web dikoordinasi melalui jaringan ‘gelap’ dan hampir semua lalu lintasnya dienkripsi.</p>
+<p><strong>siapa yang menciptakan dark web?</strong></p>
+<p><em>Dark Web</em> awal mulanya ditemukan secara tidak sengaja dari tugas akhir mahasiswa Universitas <em>Edinburgh</em> saat membuat program <em>peer-to-peer file-sharing</em> yang terdesentralisasi. <em>Ian Clarke</em> adalah orang yang membuat proyek ini pada tahun 1999. Proyek tersebut kemudian berkembang menjadi <em>Freenet,</em> sebuah platform untuk berbicara bebas secara online. Freenet kemudian dibuka untuk publik pada tahun 2000 dan memicu perhatian serta permintaan anonimitas saat online. Permintaan ini akhirnya diwujudkan oleh para pemrogram untuk menciptakan TOR dan dirilis ke publik di tahun 2002.</p>
+<p><strong>bagaimana cara mengakses dark web?</strong></p>
+<p>Meng-akses dark web memerlukan peramban khusus. Tor adalah peramban yang populer digunakan. Tor bekerja seperti peramban web biasa namun memiliki koneksi jaringan yang lebih lambat karena lapisan enkripsi yang diterapkannya. Jika kamu ingin mengetahui bagaimana mencari dark web, kamu juga memerlukan mesin pencari seperti DuckDuckGo. duckduckgo adalah mesin pencari bagi mayoritas pengguna dark web karena dapat mengindeks situs <strong>onion</strong>.</p>
+<p>beberapa cara mengakses dark web:</p>
+<ul>
+<li>mengunduh perangkat lunak peramban Tor, silahkan cari tutorial konfigurasi tor browser.</li>
+<li>selalu gunakan vpn (<em>virtual private network</em>) kami berharap jangan gunakan yang gratisan.</li>
+<li>gunakan duckduckgo untuk mencari tautan situs dark web.</li>
+<li>kunjungi situs <a href="https://thehiddenwiki.org/"><em>the hidden wiki</em></a>.</li>
+</ul>
+<p><strong>TOR browser?</strong></p>
+<p>TOR (<em>The Onion Router</em>) atau sering disebut juga <em>anonymity network</em> adalah perangkat lunak peramban sumber terbuka yang digunakan untuk meng-aktifkan komunikasi secara anonim dengan cara mengarahkan lalu-lintas internet melalui jaringan sukarelawan yang disediakan gratis di seluruh dunia.</p>
+<p>Tor dikembangkan pada tahun 1990-an oleh <em>Paul Syverson</em>, <em>Michael G. Reed</em> dan <em>David Goldschlag</em> yang merupakan karyawan laboratorium Angkatan Laut Amerika Serikat sebagai alat militer untuk bertukar pesan dan informasi secara anonim. Nama perangkat lunak ini berasal dari metode yang digunakannya untuk mengenkripsi pesan. Tor membungkus data dalam berbagai lapisan enkripsi (seperti bawang) dan mengirimkannya melalui jaringan <em>Onion Router</em>. Setiap Router yang dilewati oleh data akan melepaskan lapisan enkripsi dan mengirimkan pesan yang sebagiannya pula telah dienkripsi ke tujuan berikutnya.</p>
+<p>Proses ini dilakukan berulang kali hingga pesan di tujuan. Meski teknik ini membuat aktivitas <em>Dark Web</em> menjadi anonim, namun sebenarnya hal ini sangat memperlambat kinerja. Mirip dengan <em>Freenet</em>, pencipta Tor ingin membangun platform yang memungkinkan interaksi secara anonim dan berbagi file. Tor bahkan secara khusus dirancang untuk mereka yang ingin berbagi pengalaman kontroversial terhadap pemerintahan tanpa perlu mengkhawatirkan akibatnya.</p>
+<p>Fungsi Tor:</p>
+<ul>
+<li>untuk melindungi aktivitas pengguna saat menjelajah.</li>
+<li>menyembunyikan lokasi pengguna.</li>
+<li>pengawasan jaringan dan analisis lalu-lintas.</li>
+<li>pertahanan terhadap surveilans, (Tor browser mencegah seseorang yang mengawasi koneksi kamu untuk mengetahui situs web apa yang kamu kunjungi).</li>
+<li>enkripsi berlapis-lapis.</li>
+</ul>
+<p><strong>Domain dot Onion?</strong></p>
+<p>Dot Onion (<em>.onion</em>) adalah top-level domain istimewa yang di desain khusus untuk layanan tersembunyi. Sejarah onion memang diprakarsai oleh DARPA (<em>Defense Advanced Research Projects Agency</em>) departemen pertahanan Amerika yang memulai dan membuat program yang disebut <em>Onion Routing</em> terdiri dari proyek-proyek yang meneliti, merancang, membangun, dan menganalisis sistem komunikasi anonim. Fokusnya adalah pada sistem praktis untuk koneksi berbasis Internet latensi rendah yang menolak analisis lalu lintas, penyadapan, dan serangan lain baik oleh pihak luar (misalnya <em>router Internet</em>) dan orang dalam (<em>Onion Routing servers themselves</em>). Selain itu, konten komunikasi disembunyikan dari penyadap hingga titik di mana lalu lintas meninggalkan jaringan OR (<em>Onion Routing</em>).<sup><a href="https://www.onion-router.net/">https://www.onion-router.net/</a></sup></p>
+<p><strong>apakah dark web itu legal?</strong></p>
+<p>Dibanyak negara seperti Amerika <em>dark web</em> legal digunakan, meskipun beberapa negara eropa juga menetapkan ilegal untuk diakses. Namun, karena banyaknya kasus ilegal di <em>dark web</em> dan tingginya anonimitas yang melindungi hak privasi pengguna telah disalahgunakan oleh beberapa orang untuk tindak kejahatan. Ini merujuk pada konten dari <em>dark web</em> yang kebanyakan berisi penjualan senjata ilegal, <em>drugs</em>, pembunuhan sadis, penjualan anak, <em>botnets</em> dan lain  sebagainya.</p>
+<p>Meskipun begitu, orang-orang sering lupa bahwa <em>dark web</em> dan <em>Tor</em> hanya sebagai alat untuk melakukan hak privasi dan kebebasan berpendapat. PBB menetapkan privasi sebagai hak asasi manusia. Artikel-artikel berikut ini mengkonfirmasi hal tersebut:</p>
+<ul>
+<li>United Nations Declaration of Human Rights (UDHR) 1948, Artikel 12</li>
+<li>International Covenant on Civil and Political Rights (ICCPR) 1966, Artikel 17</li>
+<li>American Convention on Human Rights, Artikel 11</li>
+<li>American Declaration of the Rights and Duties of Man, Artikel 5</li>
+<li>European Convention on Human Rights, Artikel 8</li>
+</ul>
+<h4 id="kesimpulan">Kesimpulan</h4>
+<p>Nah, web yang kamu kenal saat ini merupakan bagian dari <em>surface web</em> berisi informasi sekitar 5-10% saja, sedangkan 90% lainnya ada di <em>deep web</em> merupakan web terdalam yang orang biasa tidak bisa meng-akses dan digunakan secara bebas. Lain halnya dengan <em>dark web</em> yang memang diciptakan untuk <em>anonimitas</em> dan kepentingan informasi rahasia negara. Namun, disalahgunakan oleh pihak - pihak yang ingin melakukan tindak kejahatan.</p>
+</div>
+        
+
+<head>
+    <style>
+        .share ul {
+            list-style-type: none;
+        }
+
+        .share ul li {
+            display: block;
+            float: left;
+            padding: 10px;
+        }
+
+        .share ul li i {
+            font-size: 20px;
+        }
+
+        .share ul li a {
+            color: #378ae9;
+        }
+
+        .share ul li a:hover {
+            color: #2376d4;
+        }
+    </style>
+</head>
+<div class="share">
+    <span style="color: #378ae9;">Bagikan:</span>
+    <ul>
+        
+        
+        <li>
+            <a href="//twitter.com/share?url=https%3a%2f%2fslahirtech.com%2fblog%2fdeep-web%2f&amp;text=Mengenal%20surface%20web%2c%20dark%20web%20dan%20deep%20web&amp;via="
+                target="_blank" class="share-btn twitter">
+                <i class="ti-twitter-alt"></i>
+                
+            </a>
+        </li>
+        
+
+
+        
+        
+
+        <li>
+            <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fslahirtech.com%2fblog%2fdeep-web%2f" target="_blank"
+                class="share-btn facebook">
+                <i class="ti-facebook"></i>
+                
+            </a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="//reddit.com/submit?url=https%3a%2f%2fslahirtech.com%2fblog%2fdeep-web%2f&amp;title=Mengenal%20surface%20web%2c%20dark%20web%20dan%20deep%20web" target="_blank"
+                class="share-btn reddit">
+                <i class="ti-reddit"></i>
+                
+            </a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fslahirtech.com%2fblog%2fdeep-web%2f&amp;title=Mengenal%20surface%20web%2c%20dark%20web%20dan%20deep%20web" target="_blank"
+                class="share-btn linkedin">
+                <i class="ti-linkedin"></i>
+                
+            </a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="whatsapp://send?text=https%3a%2f%2fslahirtech.com%2fblog%2fdeep-web%2f&amp;title=Mengenal%20surface%20web%2c%20dark%20web%20dan%20deep%20web" target="_blank"
+                class="share-btn whatsapp">
+                <i class="ti-sharethis-alt"></i>
+                
+            </a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fslahirtech.com%2fblog%2fdeep-web%2f&amp;description=Mengenal%20surface%20web%2c%20dark%20web%20dan%20deep%20web"
+                target="_blank" class="share-btn pinterest">
+                <i class="ti-pinterest"></i>
+                
+            </a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="mailto:?subject=Check out this post by Erwin%20Aris%20Prayogo&amp;body=https%3a%2f%2fslahirtech.com%2fblog%2fdeep-web%2f"
+                target="_blank" class="share-btn email">
+                <i class="ti-email"></i>
+                
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 mx-auto">
+
+      <div id="disqus_thread"></div>
+
+    </div>
+  </div>
+</div>
+
+
+<script>
+  
+
+  
+
+  (function () { 
+    let d = document, s = d.createElement('script');
+    s.src = 'https://slahirtech.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+    Disqus.</a></noscript>
+
+
+	<footer class="bg-light section pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 mb-5">
+        
+        <div class="h3 mb-4">Tentang</div>
+        <ul class="list-unstyled footer-list">
+          
+          <li><a href="https://slahirtech.com/tentang">Tentang Kami</a></li>
+          
+          <li><a href="https://slahirtech.com/blog">Blog</a></li>
+          
+          <li><a href="https://slahirtech.com/images/pdf/proposal_penawaran.pdf">Download Proposal</a></li>
+          
+        </ul>
+        
+      </div>
+      <div class="col-md-3 col-sm-6 mb-5">
+        
+        <div class="h3 mb-4">Developer</div>
+        <ul class="list-unstyled footer-list">
+          
+          <li><a href="https://slahirtech.com/">Company Profile</a></li>
+          
+          <li><a href="https://slahirtech.com/">Bumdes</a></li>
+          
+          <li><a href="https://slahirtech.com/">Web Akademi</a></li>
+          
+        </ul>
+        
+      </div>
+      <div class="col-md-3 col-sm-6 mb-5">
+        
+        <div class="h3 mb-4">Bantuan</div>
+        <ul class="list-unstyled footer-list">
+          
+          <li><a href="https://slahirtech.com/faq">FAQ</a></li>
+          
+          <li><a href="https://slahirtech.com/privacy-policy">Privacy Policy</a></li>
+          
+          <li><a href="https://slahirtech.com/syarat-dan-ketentuan">Syarat &amp; Ketentuan</a></li>
+          
+        </ul>
+        
+      </div>
+      <div class="col-md-3 col-sm-6 mb-5">
+        
+        Slahir Technology
+        <p class="mb-4"><i class='ti-location-pin'></i> Blok D Kel. Marga Agung Kec. Jati Agung - Lampung Selatan
+<br> <i class='ti-location-pin'></i> Jatisari, Lampung - Selatan <br> <i class='ti-mobile'> 088213128081</i></p>
+
+        
+        <ul class="list-inline social-icons">
+          
+          <li class="list-inline-item"><a href="//www.facebook.com/sharer/sharer.php?u=%7b%7b%20.Permalink%20%7d%7d"><i class="ti-facebook"></i></a></li>
+          
+          <li class="list-inline-item"><a href="//twitter.com/share?url=%7b%7b%20.Permalink%20%7d%7d&amp;amp;text=%7b%7b%20.Title%20%7d%7d&amp;amp;via=%7b%7b%20.Site.Social.twitter%20%7d%7d"><i class="ti-twitter-alt"></i></a></li>
+          
+          <li class="list-inline-item"><a href="#"><i class="ti-skype"></i></a></li>
+          
+          <li class="list-inline-item"><a href="//www.linkedin.com/shareArticle?url=%7b%7b%20.Permalink%20%7d%7d&amp;amp;title=%7b%7b%20.Title%20%7d%7d"><i class="ti-linkedin"></i></a></li>
+          
+        </ul>
+        
+      </div>
+    </div>
+    <div class="border-top border-default text-center py-4 mt-4">
+      <small class="content">© 2021 Dibuat dengan <span style='color: #378ae9'>♥</span> di Marga - Agung &amp; Jatisari, Lampung - Selatan</small>
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="https://slahirtech.com/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://slahirtech.com/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://slahirtech.com/plugins/slick/slick.min.js"></script>
+
+
+
+
+<script src="https://slahirtech.com/js/script.min.js"></script></body>
+
+</html>
