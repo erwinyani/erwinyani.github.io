@@ -6,10 +6,19 @@
     <description>Recent content on Slahir Technology | Maksimalkan Bisnis Anda Dengan Satu Sentuhan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Feb 2021 10:07:21 +0600</lastBuildDate>
+    <lastBuildDate>Tue, 02 Mar 2021 10:07:21 +0600</lastBuildDate>
     
 	<atom:link href="https://slahirtech.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Lebih baik web framework atau cms?</title>
+      <link>https://slahirtech.com/blog/perbedaan-framework-dan-cms/</link>
+      <pubDate>Tue, 02 Mar 2021 10:07:21 +0600</pubDate>
+      
+      <guid>https://slahirtech.com/blog/perbedaan-framework-dan-cms/</guid>
+      <description>Untuk mempromosikan sebuah produk atau jasa layanan kita membutuhkan media online seperti website, kenapa harus website?</description>
+    </item>
     
     <item>
       <title>Terminologi dunia cyber?</title>
@@ -36,15 +45,6 @@
       
       <guid>https://slahirtech.com/blog/hacker-vs-cracker/</guid>
       <description>Peretasan pertama yang tercatat dalam sejarah dunia adalah Nevil Maskelyne seorang pesulap dan penemu inggris, pada 4 juni 1903 Guglielmo Marconi mendemonstrasikan telegraf nirkabel barunya, yang menurutnya dapat mengirim pesan dengan aman melalui jarak jauh, tanpa gangguan dengan menyetel sinyal.</description>
-    </item>
-    
-    <item>
-      <title>Lebih baik web framework atau cms?</title>
-      <link>https://slahirtech.com/blog/perbedaan-framework-dan-cms/</link>
-      <pubDate>Tue, 02 Feb 2021 10:07:21 +0600</pubDate>
-      
-      <guid>https://slahirtech.com/blog/perbedaan-framework-dan-cms/</guid>
-      <description>Untuk mempromosikan sebuah produk atau jasa layanan kita membutuhkan media online seperti website, kenapa harus website?</description>
     </item>
     
     <item>
