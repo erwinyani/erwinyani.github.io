@@ -141,6 +141,7 @@ header nav ul li a:after {
 
 .content2 {
     width: 58%;
+    position: relative;
 }
 
 .content2 img {
@@ -149,11 +150,11 @@ header nav ul li a:after {
 }
 
 .content2 p {
-    width: 23%;
+    width: 40%;
     position: absolute;
-    bottom: 300px;
-    right: 100px;
-    z-index: -1;
+    bottom: 250px;
+    right: 0px;
+    z-index: 1;
 }
 
 /* button whatsapp */
@@ -506,6 +507,7 @@ footer a:hover {
         border-radius: 50px 0px 0px 0px;
         flex-direction: column;
         align-items: flex-start;
+        justify-content: flex-start;
         background-color: var(--alt-color);
         width: 0;
         height: 100vh;
@@ -513,6 +515,10 @@ footer a:hover {
         top: 0;
         position: fixed;
         transition: all .3s;
+    }
+
+    header nav ul li {
+        padding-top: 30px;
     }
 
     header nav ul li span {
@@ -656,6 +662,11 @@ footer a:hover {
 
     .slahir {
         flex-direction: column;
+        margin: auto 80px;
+    }
+
+    .why-slahir .card {
+        margin: 100px 0px 0px 0px;
     }
 
     /* ===================== built custom ================== */
@@ -840,7 +851,7 @@ footer a:hover {
 
    /* ================== why slahir =================== */
     .slahir {
-        margin: auto 80px;
+        margin: auto 40px;
     }
 
     .why-slahir h1 {
@@ -956,10 +967,10 @@ footer a:hover {
 
     
     .content2 p {
-        width: 80%;
+        width: 90%;
         position: absolute;
-        bottom: 75px;
-        right: 30px;
+        bottom: -100px;
+        right: 10px;
     }
 
     /* ================== services =========== */
