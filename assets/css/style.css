@@ -1,0 +1,1050 @@
+:root {
+    --primary-color: #378AE9;
+    --secondary-color: #1A1A1A;
+    --alt-color: #F2F8FF;
+    --color-blur: #C1D9F4;
+}
+
+
+/* ====================== font googles ================== */
+/* @import url('https://fonts.googleapis.com');
+@import url('https://fonts.gstatic.com'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+
+/* =================== box icons =================== */
+@import url('https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ======================== container ==========================*/
+.container {
+    /* background-color: var(--alt-color); */
+    height: 700px;
+}
+
+/* ======================== header navbar ======================*/
+header {
+    background-color: #ffffff;
+    /* position: sticky; */
+    transition: all .5s;
+    width: 100%;
+    z-index: 999;
+}
+
+.sticky {
+    background-color: #ffffff;
+    box-shadow: 2px 0px 10px rgba(0,0,0,.3);
+    position: fixed;
+    width: 100%;
+    /* z-index: 999; */
+}
+
+header nav {
+    /* background-color: turquoise; */
+    align-items: center;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    margin: auto 150px;
+}
+
+header nav span:nth-child(1) {
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+header nav span:nth-child(2) {
+    display: none;
+}
+
+header nav ul {
+    /* background-color: #378AE9; */
+    display: flex;
+    font-size: 14px;
+    justify-content: space-around;
+    text-transform: capitalize;
+}
+
+header nav ul li {
+    padding-left: 50px;
+    list-style-type: none;
+}
+
+header nav ul li span {
+    display: none;
+}
+
+
+header nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: all .3s;
+}
+
+header nav ul li a:hover:after {
+    width: 30px;
+}
+
+
+header nav ul li a:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 0px;
+    height: 3px;
+    transition: width 1s;
+    background-color: var(--color-blur);
+}
+
+
+/* ========================== content =======================*/
+.content {
+    /* background-color: turquoise; */
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    margin: auto 150px;
+}
+
+.content1 {
+    width: 40%;
+}
+
+
+.content1 h1 {
+    color: var(--primary-color);
+    font-size: 1.8em;
+}
+
+.content1 p {
+    margin-top: 25px;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.content2 {
+    width: 58%;
+}
+
+.content2 img {
+    width: 100%;
+    height: auto;
+}
+
+.content2 p {
+    width: 23%;
+    position: absolute;
+    bottom: 300px;
+    right: 100px;
+    z-index: -1;
+}
+
+/* button whatsapp */
+.button {
+    display: flex;
+    margin-top: 25px;
+}
+
+
+.button a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.button .whatsapp {
+    background-color: #37E97E;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 18px;
+    height: 45px;
+    padding: 10px;
+    transition: all .3s;
+    width: 200px;
+}
+
+.button .whatsapp:hover {
+    border: 1px solid #37E97E;
+    background-color: transparent;
+    color: #37E97E;
+}
+
+.button .telegram {
+    background-color: transparent;
+    border: 1px solid #378AE9;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: var(--primary-color);
+    font-size: 18px;
+    height: 45px;
+    margin-left: 35px;
+    padding: 10px;
+    transition: all .3s;
+    width: 200px;
+}
+
+.button .telegram:hover {
+    background-color: #378AE9;
+    border: 1px solid #378AE9;
+    color: #fff;
+}
+
+
+/* =========================== our services ======================== */
+.our-services h1 {
+    margin-top: 50px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.services {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    margin: auto 150px;
+    box-sizing: border-box;
+    padding-top: 80px;
+}
+
+.services div {
+    align-items: center;
+    background: linear-gradient(to right, #F2F8FF, #E4EDF6);
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-left: 25px;
+    box-shadow: 4px 4px 0px var(--color-blur);
+    color: var(--secondary-color);
+    font-size: 18px;
+    font-weight: 600;
+    height: 80px;
+    padding: 25px;
+    text-transform: capitalize;
+    text-align: center;
+    width: 250px;
+}
+
+/* ============================== our projects ====================== */
+#our-projects h1 {
+    padding-top: 50px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 150px;
+}
+
+.projects .card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 4px 8px var(--color-blur);
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 277px;
+    margin-top: 100px;
+    padding: 35px 15px;
+    transition: all .3s;
+    width: 32%;
+}
+
+.projects .card:hover {
+    box-shadow: 0px 10px 10px var(--color-blur);
+}
+
+.projects .card img {
+    margin-top: 10px;
+    height: 180px;
+    width: 100%;
+}
+
+.text-card {
+    margin-top: 60px;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.text-card div:first-child {
+    font-weight: 600;
+}
+
+.text-card div:nth-child(2) {
+    color: #cfcfcf;
+}
+
+.text-card div:last-child {
+    margin-top: 5px;
+}
+
+.text-card div:last-child a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* ================== why slahir =================== */
+.slahir {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 150px;
+}
+
+.why-slahir h1 {
+    padding-top: 50px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.why-slahir .card {
+    /* background: linear-gradient(to top, #F2F8FF, #E4EDF6); */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px var(--color-blur);
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 500px;
+    margin: 100px 25px 0px 0px;
+    transition: all .3s;
+    width: 100%;
+}
+
+.why-slahir .card:hover {
+    box-shadow: -2px -2px 8px var(--color-blur);
+}
+
+.card img {
+    margin-top: 70px;
+    /* height: 200px; */
+    width: 100%;
+}
+
+.card .title-slahir {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 50px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.card .text-slahir {
+    padding: 20px;
+    margin-top: 10px;
+    line-height: 2;
+    text-align: center;
+}
+
+
+/* ===================== built custom ================== */
+
+.built-custom {
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 150px;
+}
+
+.built-custom img {
+    height: 250px;
+}
+
+.built-custom h2 {
+    text-transform: capitalize;
+}
+
+.built-custom div:nth-last-child(2) {
+    color: #cfcfcf;
+}
+
+
+/* ======================== footer ====================== */
+footer {
+    /* background-color: var(--alt-color); */
+    height: 400px;
+}
+
+#foot {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 150px;
+    text-transform: capitalize;
+}
+
+.tentang,
+.developer,
+.bantuan,
+.com-prof {
+    line-height: 2;
+    margin-top: 50px;
+}
+
+footer ul {
+    font-size: 14px;
+
+}
+
+.com-prof span:nth-child(1) {
+    color: var(--primary-color);
+}
+
+.com-prof div {
+    font-size: 14px;
+}
+
+.com-prof .bx-phone {
+    color: var(--primary-color);
+}
+
+footer ul {
+    margin-top: 10px;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+
+footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--primary-color);
+}
+
+
+/* =========================== bottom footer ===================== */
+.bottom-footer {
+    background-color: var(--alt-color);
+    padding: 20px;
+    margin-top: 200px;
+    /* width: 100%; */
+}
+
+.bottom-foot {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 150px;
+}
+
+.copyright {
+    font-size: 12px;
+}
+
+.copyright span {
+    color: #ff0000;
+}
+
+.social a {
+    margin: 0px 10px;
+    text-align: justify;
+    transition: all .5s;
+}
+
+.social a:nth-child(1) {
+    color: #ff0000;
+}
+
+/* ====================== back to top ======================== */
+.back-to-top {
+    background-color: var(--color-blur);
+    box-sizing: border-box;
+    border-radius: 5px;
+    bottom: 65px;
+    display: block;
+    height: 30px;
+    padding: 6px 7px;
+    position: fixed;
+    right: 150px;
+    transition: all .3s;
+    width: 30px;
+}
+
+.back-to-top a {
+    color: var(--primary-color);
+}
+
+
+/* ===================== responsive 800px ======================= */
+
+@media only screen and (max-width: 800px ) {
+    header nav {
+        margin: auto 80px;
+    }
+
+
+    header nav span:nth-child(2) {
+        display: block;
+        font-size: 25px;
+    }
+
+    header nav span:nth-child(2):hover {
+        color: var(--primary-color);
+        cursor: pointer;
+    }
+
+    header nav ul {
+        /* flex-direction: column; */
+        border-radius: 50px 0px 0px 0px;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: var(--alt-color);
+        width: 0;
+        height: 100vh;
+        right: 0;
+        top: 0;
+        position: fixed;
+        transition: all .3s;
+    }
+
+    header nav ul li span {
+        display: block;
+    }
+
+    .bx-x {
+        font-size: 24px;
+        color: var(--secondary-color);
+        cursor: pointer;
+    }
+    
+
+    /* ===== content ===== */
+    .content {
+        display: flex;
+        padding-top: 30px;
+        margin: auto 80px;
+    }
+
+    .content1 h1 {
+        font-size: 1.5em;
+    }
+    
+    .content1 p {
+        font-size: 14px;
+    }
+
+    .content1 {
+        width: 60%;
+    }
+
+    .content2 {
+        width: 100%;
+    }
+
+    
+    .content2 p {
+        width: 100%;
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
+    }
+
+
+
+    /* .content2 img:nth-child(1) {
+        display: none;
+    }
+
+    .content2 img:nth-child(2) {
+        text-align: center;
+        display: block;
+        height: 250px;
+        width: 300px;
+    } */
+
+    .content2 p {
+        margin-left: 20px;
+        line-height: 2;
+        position: relative;
+        font-size: 14px;
+    }
+
+
+    .button .whatsapp {
+        font-size: 16px;
+        width: 150px;
+    }
+    
+    .button .telegram {
+        font-size: 16px;
+        width: 150px;
+    }
+
+    .our-services h1 {
+        margin-top: -200px;
+    }
+
+    .services {
+        height: 300px;
+        margin: auto 80px;
+    }
+
+    .services div {
+        font-size: 14px;
+        font-weight: 600;
+        box-sizing: none;
+        height: 60px;
+        padding: 17px 10px;
+        width: 200px;
+    }
+
+    .back-to-top {
+        right: 80px;
+    }
+    
+    /* ============================== our projects ====================== */
+    #our-projects h1 {
+        padding-top: 10px;
+    }
+
+    .projects {
+        margin: auto 80px;
+    }
+
+    .projects .card {
+        height: 200px;
+    }
+
+    .projects .card img {
+        margin-bottom: 5px;
+        height: 140px;
+    }
+
+    /* .text-card {
+        margin-top: 60px;
+        position: relative;
+        text-transform: capitalize;
+    }
+
+    .text-card div:first-child {
+        font-weight: 600;
+    }
+
+    .text-card div:nth-child(2) {
+        color: #cfcfcf;
+    }
+
+    .text-card div:last-child {
+        margin-top: 5px;
+    }
+
+    .text-card div:last-child a {
+        color: var(--primary-color);
+        text-decoration: none;
+    } */
+
+    /* ================== why slahir =================== */
+
+
+    .slahir {
+        flex-direction: column;
+    }
+
+    /* ===================== built custom ================== */
+
+    .built-custom {
+        flex-direction: column;
+    }
+
+    .built-custom img {
+        margin-bottom: 40px;
+        height: 250px;
+        width: 100%;
+    }
+
+    .built-custom h2 {
+        text-transform: capitalize;
+    }
+
+    .built-custom div:nth-last-child(2) {
+        color: #cfcfcf;
+    }
+
+    /* ======================== footer ====================== */
+    footer {
+        /* background-color: var(--alt-color); */
+        height: 400px;
+    }
+
+    #foot {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: auto 80px;
+        text-transform: capitalize;
+    }
+
+    /* =========================== bottom footer ===================== */
+
+    .bottom-foot {
+        display: flex;
+        justify-content: space-between;
+        margin: auto 80px;
+    }
+
+}
+
+/* ===================== responsive 500px ======================= */
+
+@media only screen and (max-width: 500px ) {
+    header nav {
+        margin: auto 40px;
+    }
+
+    header nav span:nth-child(1) {
+        font-size: 16px;
+    }
+
+    header nav span:nth-child(2) {
+        display: block;
+        font-size: 25px;
+    }
+
+    header nav span:nth-child(2):hover {
+        color: var(--primary-color);
+        cursor: pointer;
+    }
+
+    /* header nav ul {
+        display: none;
+    } */
+
+    /* ===== content ===== */
+    .content {
+        flex-direction: column;
+        padding-top: 30px;
+        margin: auto 40px;
+    }
+
+    .content1 h1 {
+        font-size: 1.5em;
+    }
+    
+    .content1 p {
+        font-size: 14px;
+    }
+
+    .content1 {
+        width: 100%;
+    }
+
+    .content2 {
+        width: 100%;
+    }
+
+    
+    .content2 p {
+        width: 100%;
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
+    }
+
+
+
+    /* .content2 img:nth-child(1) {
+        display: none;
+    }
+
+    .content2 img:nth-child(2) {
+        text-align: center;
+        display: block;
+        height: 250px;
+        width: 300px;
+    } */
+
+    .content2 p {
+        margin-left: 20px;
+        line-height: 2;
+        position: relative;
+        font-size: 14px;
+    }
+
+
+    .button .whatsapp {
+        font-size: 16px;
+        width: 120px;
+    }
+    
+    .button .telegram {
+        font-size: 16px;
+        width: 120px;
+    }
+
+    /* ================== services =========== */
+
+    .our-services h1 {
+        margin-top: 100px;
+        font-size: 1.5em;
+    }
+
+    .services {
+        height: 300px;
+        margin: auto 40px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .services div {
+        margin-left: 0px;
+        font-size: 14px;
+        font-weight: 600;
+        box-sizing: none;
+        height: 60px;
+        padding: 15px 10px;
+        width: 120px;
+    }
+
+    
+    /* ============================== our projects ====================== */
+    #our-projects h1 {
+        padding-top: 30px;
+        font-size: 1.5em;
+    }
+
+    .projects {
+        flex-direction: column;
+        margin: auto 40px;
+    }
+
+    .projects .card {
+        height: 200px;
+        width: 100%;
+    }
+
+    .projects .card img {
+        margin-bottom: 5px;
+        height: 140px;
+    }
+
+    .text-card {
+        margin-top: 10px;
+    }
+
+   /* ================== why slahir =================== */
+    .slahir {
+        margin: auto 80px;
+    }
+
+    .why-slahir h1 {
+        padding-top: 450px;
+        font-size: 1.5em;
+    }
+
+
+    /* ===================== built custom ================== */
+
+    .built-custom {
+        display: flex;
+        justify-content: space-around;
+        margin: 100px 40px;
+    }
+
+    .built-custom img {
+        height: 250px;
+    }
+
+    .built-custom h2 {
+        font-size: 1.3em;
+        text-transform: capitalize;
+    }
+
+    .built-custom div:nth-last-child(2) {
+        color: #cfcfcf;
+    }
+
+    /* ===================== built custom ================== */
+
+    .built-custom {
+        flex-direction: column;
+    }
+
+    .built-custom img {
+        margin-bottom: 40px;
+        height: 250px;
+        width: 100%;
+    }
+
+    .built-custom h2 {
+        text-transform: capitalize;
+    }
+
+    .built-custom div:nth-last-child(2) {
+        color: #cfcfcf;
+    }
+
+    /* ======================== footer ====================== */
+    footer {
+        /* background-color: var(--alt-color); */
+        height: 400px;
+    }
+
+    #foot {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: auto 40px;
+        text-transform: capitalize;
+    }
+
+    /* =========================== bottom footer ===================== */
+
+    .bottom-foot {
+        margin: auto 10px;
+    }
+
+    .back-to-top {
+        right: 40px;
+        z-index: 9999;
+    }
+
+}
+
+
+/* ===========================  responsive 375px ========================*/
+@media only screen and (max-width: 378px) {
+    header nav {
+        margin: auto 30px;
+    }
+
+    header nav span:nth-child(1) {
+        font-size: 14px;
+    }
+
+    header nav span:nth-child(2) {
+        font-size: 20px;
+    }
+
+    /* ===== content ===== */
+    .content {
+        flex-direction: column;
+        padding-top: 30px;
+        margin: auto 30px;
+    }
+
+    .content1 h1 {
+        font-size: 1.5em;
+    }
+    
+    .content1 p {
+        font-size: 14px;
+    }
+
+    .content1 {
+        width: 100%;
+    }
+
+    .content2 {
+        width: 100%;
+    }
+
+    
+    .content2 p {
+        width: 80%;
+        position: absolute;
+        bottom: 75px;
+        right: 30px;
+    }
+
+    /* ================== services =========== */
+
+    .our-services h1 {
+        margin-top: 100px;
+        font-size: 1.5em;
+    }
+
+    .services {
+        height: 300px;
+        margin: auto 80px;
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .services div {
+        /* margin-left: 10px; */
+        margin: 0px 0px 15px 0px;
+        font-size: 14px;
+        font-weight: 600;
+        box-sizing: none;
+        height: 60px;
+        padding: 15px 10px;
+        width: 200px;
+    }
+
+
+    /* ============================== our projects ====================== */
+    #our-projects h1 {
+        padding-top: 150px;
+        font-size: 1.5em;
+    }
+
+    .projects {
+        flex-direction: column;
+        margin: auto 30px;
+    }
+
+    /* ================== why slahir =================== */
+    .slahir {
+        margin: auto 30px;
+    }
+
+    .why-slahir h1 {
+        padding-top: 550px;
+        font-size: 1.3em;
+    }
+
+     /* ===================== built custom ================== */
+
+     .built-custom {
+        margin: 100px 30px;
+    }
+
+
+
+    /* ======================== footer ====================== */
+    footer {
+        /* background-color: var(--alt-color); */
+        height: 400px;
+    }
+
+    #foot {
+        display: grid;
+        grid-template-columns: auto;
+        margin: auto 30px;
+        text-transform: capitalize;
+    }
+
+    /* =========================== bottom footer ===================== */
+
+    .bottom-foot {
+        margin: auto 10px;
+    }
+
+
+    .back-to-top {
+        right: 30px;
+    }
+}
+
+
+
+
+
+
+
