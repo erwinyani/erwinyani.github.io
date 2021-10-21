@@ -471,12 +471,12 @@ footer a:hover {
     border-radius: 5px;
     bottom: 65px;
     display: block;
-    height: 30px;
-    padding: 6px 7px;
+    height: 35px;
+    padding: 7px 10px;
     position: fixed;
     right: 150px;
     transition: all .3s;
-    width: 30px;
+    width: 35px;
 }
 
 .back-to-top a {
