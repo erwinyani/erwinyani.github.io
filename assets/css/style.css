@@ -25,6 +25,8 @@
 }
 
 html {
+    margin: 0;
+    padding: 0;
     scroll-behavior: smooth;
 }
 
@@ -52,6 +54,8 @@ header {
     box-shadow: 2px 0px 10px rgba(0,0,0,.3);
     position: fixed;
     width: 100%;
+    margin: 0;
+    padding: 0;
     /* z-index: 999; */
 }
 
@@ -64,10 +68,11 @@ header nav {
     margin: auto 150px;
 }
 
-header nav span:nth-child(1) {
+header nav span:nth-child(1) a {
     color: var(--primary-color);
     font-size: 20px;
     font-weight: 800;
+    text-decoration: none;
 }
 
 header nav span:nth-child(2) {
@@ -83,7 +88,7 @@ header nav ul {
 }
 
 header nav ul li {
-    padding-left: 50px;
+    padding-left: 30px;
     list-style-type: none;
 }
 
@@ -436,7 +441,7 @@ footer a:hover {
 .bottom-footer {
     background-color: var(--alt-color);
     padding: 20px;
-    margin-top: 200px;
+    margin-top: 160px;
     /* width: 100%; */
 }
 
@@ -484,6 +489,92 @@ footer a:hover {
 }
 
 
+/* ============================= about us ======================== */
+.about {
+    text-align: justify;
+    margin: auto 180px;
+}
+
+.about h2 {
+    /* margin: 100px 30px; */
+    padding: 100px 0px 30px 0px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.about-us {
+    margin: 100px 0px;
+    padding: 20px;
+    background-color: var(--alt-color);
+}
+
+
+.erwin {
+   margin: auto 180px;
+   display: flex; 
+   justify-content: space-between;
+   align-items: center;
+}
+
+.image {
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    /* clip-path: circle(); */
+    border-radius: 100%;
+    height: 300px;
+    width: 300px;
+}
+
+.social-icon {
+    position: relative;
+    margin: 0px 0px 0px 60px;
+    height: 30px;
+}
+
+.social-icon a {
+    margin-left: 20px;
+}
+
+.about-simar {
+    margin: 100px 0px;
+    padding: 40px;
+}
+
+.simar {
+    margin: auto 180px;
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .text-about h3 {
+     text-transform: capitalize;
+ }
+
+ .text-about p {
+     color: #cfcfcf;
+     text-transform: capitalize;
+     margin-bottom: 10px;
+ }
+
+ .contact {
+     text-align: center;
+     margin-bottom: 100px;
+ }
+
+ .contact a {
+     text-decoration: none;
+     color: var(--secondary-color);
+     padding: 10px;
+ }
+
+ .contact p {
+     margin-bottom: 50px;
+ }
+
+
 /* ===================== responsive 800px ======================= */
 
 @media only screen and (max-width: 800px ) {
@@ -515,6 +606,7 @@ footer a:hover {
         top: 0;
         position: fixed;
         transition: all .3s;
+        z-index: 1;
     }
 
     header nav ul li {
@@ -710,6 +802,86 @@ footer a:hover {
         margin: auto 80px;
     }
 
+    /* ============================= about us ======================== */
+    .about {
+        text-align: justify;
+        margin: auto 80px;
+    }
+
+    .about h2 {
+        /* margin: 100px 30px; */
+        padding: 100px 0px 30px 0px;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    .about-us {
+        margin: 100px 0px;
+        padding: 20px;
+        background-color: var(--alt-color);
+    }
+
+
+    .erwin {
+    margin: auto 80px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .image {
+        margin-right: 10px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        /* clip-path: circle(); */
+        border-radius: 100%;
+        height: 250px;
+        width: 250px;
+    }
+
+    .social-icon {
+        position: relative;
+        margin: 0px 0px 0px 60px;
+        height: 30px;
+    }
+
+    .social-icon a {
+        margin-left: 20px;
+    }
+
+    .about-simar {
+        margin: 100px 0px;
+        padding: 40px;
+    }
+
+    .simar {
+        margin: auto 80px;
+        display: flex;
+        flex-direction: row-reverse; 
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .contact {
+        margin: 0px 40px 100px 40px;
+        text-align: center;
+    }
+
+    .contact-social a {
+        text-decoration: none;
+        color: var(--secondary-color);
+    }
+
+    .contact p {
+        margin-bottom: 50px;
+    }
+
+    .contact-social {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
 }
 
 /* ===================== responsive 500px ======================= */
@@ -719,7 +891,7 @@ footer a:hover {
         margin: auto 40px;
     }
 
-    header nav span:nth-child(1) {
+    header nav span:nth-child(1) a {
         font-size: 16px;
     }
 
@@ -925,6 +1097,96 @@ footer a:hover {
         z-index: 9999;
     }
 
+     /* =========================== bottom footer ===================== */
+
+     .bottom-foot {
+        display: flex;
+        justify-content: space-between;
+        margin: auto 80px;
+    }
+
+    /* ============================= about us ======================== */
+    .about {
+        text-align: justify;
+        margin: auto 40px;
+    }
+
+    .about h2 {
+        /* margin: 100px 30px; */
+        padding: 70px 0px 30px 0px;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    .about-us {
+        margin: 100px 0px;
+        padding: 20px;
+        background-color: var(--alt-color);
+    }
+
+
+    .erwin {
+    margin: auto 40px;
+    display: flex; 
+    justify-content: space-between;
+    flex-direction: column;
+    /* align-items: center; */
+    }
+
+    .image {
+        /* margin-right: 40px; */
+        margin-bottom: 20px;
+        margin-left: 30px;
+        /* clip-path: circle(); */
+        border-radius: 100%;
+    }
+
+    .social-icon {
+        margin: 0px 0px 0px 60px;
+        height: 30px;
+    }
+
+    .social-icon a {
+        margin-left: 20px;
+    }
+
+    .text-about {
+        margin-top: 50px;
+    }
+
+    .about-simar {
+        margin: 100px 0px;
+        padding: 40px;
+    }
+
+    .simar {
+        margin: auto 30px;
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .contact {
+        margin: 0px 40px 100px 40px;
+        text-align: center;
+    }
+
+    .contact-social a {
+        text-decoration: none;
+        color: var(--secondary-color);
+    }
+
+    .contact p {
+        margin-bottom: 50px;
+    }
+
+    .contact-social {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
 }
 
 
@@ -934,7 +1196,7 @@ footer a:hover {
         margin: auto 30px;
     }
 
-    header nav span:nth-child(1) {
+    header nav span:nth-child(1) a {
         font-size: 14px;
     }
 
@@ -1051,6 +1313,28 @@ footer a:hover {
     .back-to-top {
         right: 30px;
     }
+
+    /* ============================= about us ======================== */
+    .about {
+        text-align: justify;
+        margin: auto 30px;
+    }
+
+    .about h2 {
+        /* margin: 100px 30px; */
+        padding: 60px 0px 30px 0px;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    .erwin {
+    margin: auto 30px;
+    }
+
+    .simar {
+        margin: auto 20px;
+    }
+
 }
 
 
