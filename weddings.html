@@ -28,7 +28,7 @@
     <header id="navBar">
         <nav>
             <span id="logo">
-               <a href="/">Slahir Technology</a>
+               <a href="index.html">Slahir Technology</a>
             </span>
 
             <span onclick="sideBar()">
@@ -41,7 +41,7 @@
                 </li>
 
                 <li>
-                    <a href="/">home </a>
+                    <a href="index.html">home </a>
                 </li>
                 <li>
                     <a href="#">blog</a>
@@ -50,7 +50,7 @@
                     <div class="drop-projects" onclick="dropDown()">projects</div>
                     <div id="dropDownMenu" class="dropdown-content">
                         <a href="/#our-projects">company</a>
-                        <a href="/weddings.html">wedding</a>
+                        <a href="weddings.html">wedding</a>
                     </div>
                 </li>
                 <li>
@@ -77,27 +77,27 @@
                 <h1>weddings</h1>
                 <div class="projects">
                     <div class="card">
-                        <img src="static/images/weddings/zupika.png" alt="bumdesabenah.com">
+                        <img src="static/images/weddings/zupika.png" alt="zupika">
                         <div class="text-card">
                             <!-- <div>bumdesabenah</div> -->
                             <!-- <div>indonesia</div> -->
-                            <div><a href="/zupikasanggarwedding/index.html">lihat utuh <i class="bx bx-right-arrow-alt"></i></a></div>
+                            <div><a href="zupikasanggarwedding/index.html">lihat utuh <i class="bx bx-right-arrow-alt"></i></a></div>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="static/images/weddings/agustya.png" alt="man1waykanan.sch.id">
+                        <img src="static/images/weddings/agustya.png" alt="agustya">
                         <div class="text-card">
                             <!-- <div>man 1 waykanan</div> -->
                             <!-- <div>indonesia</div> -->
-                            <div><a href="#">lihat utuh <i class="bx bx-right-arrow-alt"></i></a></div>
+                            <div><a href="agustyahendrawedding/index.html">lihat utuh <i class="bx bx-right-arrow-alt"></i></a></div>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="static/images/weddings/rahmi.png" alt="keumsutech.com">
+                        <img src="static/images/weddings/rahmi.png" alt="rahmi">
                         <div class="text-card">
                             <!-- <div>PT. Keumsutech</div> -->
                             <!-- <div>indonesia</div> -->
-                            <div><a href="#">lihat utuh <i class="bx bx-right-arrow-alt"></i></a></div>
+                            <div><a href="rahmizainalwedding/index.html">lihat utuh <i class="bx bx-right-arrow-alt"></i></a></div>
                         </div>
                     </div>
                 </div>
@@ -107,7 +107,7 @@
                         <img src="static/images/weddings/putri.png" alt="bumdesabenah.com">
                         <div class="text-card">
                            
-                            <div><a href="/zupikasanggarwedding/index.html">lihat utuh <i class="bx bx-right-arrow-alt"></i></a></div>
+                            <div><a href="putriyadiwedding/index.html">lihat utuh <i class="bx bx-right-arrow-alt"></i></a></div>
                         </div>
                     </div>
                 </div>
@@ -212,16 +212,16 @@
 
             // Close the dropdown if the user clicks outside of it
             window.onclick = function(event) {
-            if (!event.target.matches('.drop-projects')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
+                if (!event.target.matches('.drop-projects')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                    }
                 }
-                }
-            }
             }
         </script>
         
