@@ -188,7 +188,7 @@
         <div class="bottom-footer">
             <div class="bottom-foot">
                 <div class="copyright">
-                    &copy; 2021 dibuat dengan <span>&hearts;</span> di Lampung, Slahir Technology
+                    &copy; <span id="tahun"></span> dibuat dengan <span>&hearts;</span> di Lampung, Slahir Technology
                 </div>
                 <div class="social">
                    <a href="mailto:erwinaris442@gmail.com"><span><img src="static/images/email.svg" alt=""></span></a>
@@ -233,6 +233,11 @@
                 }
             }
         }
+
+        let date = new Date();
+        let year = date.getFullYear();
+
+        document.getElementById('tahun').innerHTML = (year);
     </script>
     
 </body>
