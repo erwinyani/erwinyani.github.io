@@ -1414,8 +1414,7 @@ footer a:hover {
         background: linear-gradient(314.65deg, #854dfd -0.61%, #4da8fd 100%);
         border-radius: 10px;
         margin: 20px 30px 0px;
-        padding: 20px;
-        width: 280px;
+        width: 270px;
     }
    
     .subscribe p {
@@ -1424,11 +1423,7 @@ footer a:hover {
     }
    
     .subscribe input {
-        border: none;
-        border-radius: 10px;
-        box-shadow: 2px 0px 10px rgba(0,0,0,.3);
-        padding: 10px;
-        width: 160px;
+        width: 150px;
     }
 
 }
