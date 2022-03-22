@@ -72,11 +72,21 @@
         <p><strong><em>“Maksimalkan Bisnis Anda Dengan Satu Sentuhan”</em></strong> merupakan tagline kami untuk membantu anda yang mempunyai bisnis atau usaha dan ingin dikenal diseluruh dunia.</p>
     </div>
 
+    <div class="subscribe">
+        <p>
+            Subscribe untuk berlangganan
+        </p>
+        <!-- <form action="/about.html"> -->
+            <input type="email" id="subScribe" placeholder="Maukan email kamu..." required>
+            <button onclick='klik()' onload="about()">Subscribe</button>
+        <!-- </form> -->
+    </div>
+
     <div class="about-us">
         <div class="">
             <div class="erwin">
                 <div>
-                    <img class="image" src="static/images/about/erwin.jpeg" alt="">
+                    <img class="image" src="static/images/about/2.jpeg" alt="">
 
                     <span class="social-icon">
                         <a href="mailto:erwinaris442@gmail.com" target="_blank"><img src="static/images/email.svg" alt=""></a>
@@ -205,6 +215,7 @@
     </div>
 
     <script src="assets/javascript/scroll.js"></script>
+
     <script>
         function sideBar(){
             document.querySelector('.navigator').style.width = '40%'
@@ -238,6 +249,40 @@
         let year = date.getFullYear();
 
         document.getElementById('tahun').innerHTML = (year);
+    </script>
+
+    <!-- firebase susbscribe -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyDfIUqQzViPtPUzJ3d5jfsEoNp7Ab9-V24",
+            authDomain: "projest-wedding.firebaseapp.com",
+            databaseURL: "https://projest-wedding.firebaseio.com",
+            projectId: "projest-wedding",
+            storageBucket: "projest-wedding.appspot.com",
+            messagingSenderId: "435552037956",
+            appId: "1:435552037956:web:6f66a60abbce88a1e9e011",
+            measurementId: "G-E90MYH7X0G"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        // firebase.analytics();
+
+        function klik() {
+
+            firebase.database().ref('admin').push({
+                email: document.getElementById('subScribe').value
+                // message: document.getElementById('userMessage').value
+            });
+
+            setInterval(() => {
+                window.location.assign('/about.html');
+            }, 8000);
+
+        }
     </script>
     
 </body>

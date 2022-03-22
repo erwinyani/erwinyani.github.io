@@ -606,6 +606,43 @@ footer a:hover {
      margin-bottom: 50px;
  }
 
+ .subscribe {
+     background: linear-gradient(314.65deg, #854dfd -0.61%, #4da8fd 100%);
+     border-radius: 10px;
+     height: 70px;
+     margin: 30px auto;
+     padding: 20px;
+     width: 330px;
+ }
+
+ .subscribe p {
+     color: #fff;
+     margin-bottom: 10px;
+ }
+
+ .subscribe input {
+     border: none;
+     border-radius: 10px;
+     box-shadow: 2px 0px 10px rgba(0,0,0,.3);
+     padding: 10px;
+ }
+
+ .subscribe button {
+     background: linear-gradient(314.65deg, #854dfd -0.61%, #4da8fd 100%);
+     border: none;
+     border-radius: 10px;
+     box-shadow: 2px 0px 10px rgba(0,0,0,.3);
+     color: var(--alt-color);
+     cursor: pointer;
+     padding: 10px;
+     /* text-decoration: none; */
+     text-transform: uppercase;
+ }
+
+ .subscribe button:hover {
+    background: linear-gradient(314.65deg, #854dfd -0.61%, #6fb1f0 100%);
+ }
+
 
 /* ===================== responsive 800px ======================= */
 
@@ -1371,6 +1408,27 @@ footer a:hover {
 
     .simar {
         margin: auto 20px;
+    }
+
+    .subscribe {
+        background: linear-gradient(314.65deg, #854dfd -0.61%, #4da8fd 100%);
+        border-radius: 10px;
+        margin: 20px 30px 0px;
+        padding: 20px;
+        width: 280px;
+    }
+   
+    .subscribe p {
+        color: #fff;
+        margin-bottom: 10px;
+    }
+   
+    .subscribe input {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 2px 0px 10px rgba(0,0,0,.3);
+        padding: 10px;
+        width: 160px;
     }
 
 }
