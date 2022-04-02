@@ -654,11 +654,12 @@ footer a:hover {
 
     header nav span:nth-child(2) {
         display: block;
+        color: var(--primary-color);
         font-size: 25px;
     }
 
     header nav span:nth-child(2):hover {
-        color: var(--primary-color);
+        color: #0a76f1;
         cursor: pointer;
     }
 
@@ -694,7 +695,6 @@ footer a:hover {
         cursor: pointer;
     }
     
-
     /* ===== content ===== */
     .content {
         display: flex;
