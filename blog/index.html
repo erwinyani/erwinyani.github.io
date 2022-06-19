@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Platform jasa pembuatan website dan aplikasi">
+    <meta name="keywords" content="jasa website, website lampung, jasa pembuatan website, personal web, hosting, aplikasi, web portfolio, jasa web">
+    <meta property="og:image" content="https://slahirtech.com/static/images/slahir-icon.jpg" />
+    <meta property="og:description" content="Platform jasa pembuatan website, aplikasi web dan aplikasi mobile profesional">
+    <meta property="og:url" content="https://slahirtech.com/">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="shortcut icon" href="../static/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="../static/images/favicon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <title>Blog Posts -Slahir Technology Platform jasa pembuatan website dan aplikasi</title>
+</head>
+<body>
+
+    <!-- Header navbar-->
+    <header id="navBar">
+        <nav>
+            <span id="logo">
+               <a href="/">Slahir Technology</a>
+            </span>
+
+            <span onclick="sideBar()">
+                <i class="bx bx-menu"></i>
+            </span>
+
+            <ul class="navigator">
+                <li>
+                    <span onclick="closeNav()"><i class="bx bx-x"></i></span>
+                </li>
+
+                <li>
+                    <a href="/">home </a>
+                </li>
+                <li>
+                    <a href="/blog">blog</a>
+                </li>
+                <li class="dropdown">
+                    <div class="drop-projects" onclick="dropDown()">projects</div>
+                    <div id="dropDownMenu" class="dropdown-content">
+                        <a href="/#our-projects">company</a>
+                        <a href="/weddings">wedding</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="/about">about</a>
+                </li>
+            </ul>
+
+            <!-- <div class="side-nav">
+                
+            </div> -->
+        </nav>
+    </header>
+    
+
+    <!-- main -->
+   <main>
+    <div class="blog-container">
+        <p class="breadcrumb">home <span>>>></span> blog posts</p>
+        <div class="blog-input">
+            <input type="text" placeholder="cari...">
+            <button type="submit">cari</button>
+        </div>
+        <div class="blog-grid">
+            <div class="blog-projects">
+                <div class="blog-card">
+                    <img src="../static/images/blog/tawkto1.png" alt="tawk.to">
+                    <div class="text-card-blog">
+                        <div>Layanan live chat gratis menggunakan tawk.to</div>
+                        <!-- <div>indonesia</div> -->
+                        <div class="category">
+                            <a href="/category" target="_blank">Live Chat, </a><span>18 Juni 2022 by <span class="user">erwin</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <img src="../static/images/blog/desktop-gnome.png" alt="Desktop Gnome">
+                    <div class="text-card-blog">
+                        <div>DE (Desktop Environment) sistem operasi GNU/Linux</div>
+                        <!-- <div>indonesia</div> -->
+                        <div class="category">
+                            <a href="/category" target="_blank">GNU/Linux, </a><span>18 Juni 2022 by <span class="user">erwin</span></span>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="blog-card-line card-line-visible">
+                <p><a href="https://api.whatsapp.com/send?phone=+6288213128081&text=Hi,%20saya%20mau%20pasang%20iklan%20dong?" target="_blank">iklan disini</a></p>
+            </div>
+        </div>
+
+        <div class="blog-grid blog-projects-visible">
+            <div class="blog-projects">
+                <div class="blog-card">
+                    <img src="../static/images/blog/webflow-dashboard.png" alt="tawk.to">
+                    <div class="text-card-blog">
+                        <div>Bikin website tanpa ngoding, emang bisa?"</div>
+                        <!-- <div>indonesia</div> -->
+                        <div class="category">
+                            <a href="/category" target="_blank">Live Chat, </a><span>18 Juni 2022 by <span class="user">erwin</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <img src="../static/images/blog/desktop-gnome.png" alt="Desktop Gnome">
+                    <div class="text-card-blog">
+                        <div>DE (Desktop Environment) sistem operasi GNU/Linux</div>
+                        <!-- <div>indonesia</div> -->
+                        <div class="category">
+                            <a href="/category" target="_blank">GNU/Linux, </a><span>18 Juni 2022 by <span class="user">erwin</span></span>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            
+            <div class="blog-card-line card-line-visible">
+                <p><a href="https://api.whatsapp.com/send?phone=+6288213128081&text=Hi,%20saya%20mau%20pasang%20iklan%20dong?" target="_blank">iklan disini</a></p>
+            </div>
+        </div>
+
+        <div class="blog-grid blog-projects-visible">
+            <div class="blog-projects">
+                <div class="blog-card">
+                    <img src="../static/images/blog/tawkto1.png" alt="rahmi">
+                    <div class="text-card-blog">
+                        <div>layanan live chat gratis menggunakan tawk.to</div>
+                        <!-- <div>indonesia</div> -->
+                        <div class="category">
+                            <a href="/category" target="_blank">Live Chat, </a><span>18 Juni 2022 by <span class="user">erwin</span></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <img src="../static/images/blog/tawkto1.png" alt="rahmi">
+                    <div class="text-card-blog">
+                        <div>layanan live chat gratis menggunakan tawk.to</div>
+                        <!-- <div>indonesia</div> -->
+                        <div class="category">
+                            <a href="/category" target="_blank">Live Chat, </a><span>18 Juni 2022 by <span class="user">erwin</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-card-line card-line-visible">
+                <p>recent post</p>
+            </div>
+        </div>
+        <div class="pagination">
+            <div class="prev"><a href=""><<<</a></div>
+            <div><a href="">1</a></div>
+            <div><a href="">2</a></div>
+            <div><a href="">3</a></div>
+            <div><a href="">4</a></div>
+            <div><a href="">5</a></div>
+            <div class="next"><a href="">>>></a></div>
+        </div>
+
+        <div class="blog-iklan">
+            <div class="blog-iklan-visible">
+                <p><a href="https://api.whatsapp.com/send?phone=+6288213128081&text=Hi,%20saya%20mau%20pasang%20iklan%20dong?" target="_blank">iklan disini</a></p>
+            </div>
+            
+            <div class="blog-iklan-visible">
+            <p><a href="https://api.whatsapp.com/send?phone=+6288213128081&text=Hi,%20saya%20mau%20pasang%20iklan%20dong?" target="_blank">iklan disini</a></p>
+        </div>
+        </div>
+    </div>
+
+</main>
+
+
+    <!-- footer -->
+        <footer>
+            <div id="foot">
+                <div class="tentang">
+                    <h3>tentang</h3>
+                    <ul>
+                        <li><a href="about.html">tentang kami</a></li>
+                        <li><a href="#">download proposal</a></li>
+                        <li><a href="#">blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="developer">
+                    <h3>developer</h3>
+                    <ul>
+                        <li><a href="#">company profile</a></li>
+                        <li><a href="#">online shop</a></li>
+                        <li><a href="#">personal web</a></li>
+                    </ul>
+                </div>
+                
+                <div class="bantuan">
+                    <h3>bantuan</h3>
+                    <ul>
+                        <li><a href="#">faq</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">syarat & ketentuan</a></li>
+                    </ul>
+                </div>
+                
+                <div class="com-prof">
+                    <h3><span>slahir tech</span>nology</h3>
+                    <div>blok d marga agung</div>
+                    <div>jatisari, lampung selatan</div>
+                    <i class="bx bx-phone"></i> <span>+6288213128081</span>
+                </div>
+            </div>
+
+            <div class="bottom-footer">
+                <div class="bottom-foot">
+                    <div class="copyright">
+                        &copy; <span id="tahun"></span> dibuat dengan <span>&hearts;</span> di Lampung, Slahir Technology
+                    </div>
+                    <div class="social">
+                       <a href="mailto:erwinaris442@gmail.com"><span><img src="../static/images/email.svg" alt=""></span></a>
+                       <a href="https://api.whatsapp.com/send?phone=+6288213128081&text=Hi,%20ingin%20buat%20website%20dong?"><span><img src="../static/images/whatsapp.svg" alt=""></span></a> 
+                       <a href="https://t.me/ewinaris"><span><img src="../static/images/tele.svg" alt=""></span></a> 
+                       <a href=""><span><img src="../static/images/insta.svg" alt=""></span></a> 
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div id="to-top" class="back-to-top">
+           <a href="#"><div class="bx bx-up-arrow-alt"></div></a>
+        </div>
+
+        <script src="../assets/javascript/scroll.js"></script>
+        
+        <script>
+            function sideBar(){
+                document.querySelector('.navigator').style.width = '40%'
+            }
+
+            function closeNav() {
+                document.querySelector('.navigator').style.width = '0'
+            }
+
+                        /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function dropDown() {
+            document.getElementById("dropDownMenu").classList.toggle("show");
+            }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+                if (!event.target.matches('.drop-projects')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                    }
+                }
+            }
+
+            let date = new Date();
+            let year = date.getFullYear();
+
+            document.getElementById('tahun').innerHTML = (year);
+        </script>
+        
+    </body>
+    </html>
+    
