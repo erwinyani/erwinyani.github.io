@@ -276,6 +276,7 @@ header nav ul li a:after {
 
 /* ============================== our projects ====================== */
 #our-projects h1 {
+    /* padding-top: 20px; */
     padding-bottom: 100px;
     text-align: center;
     text-transform: capitalize;
@@ -509,7 +510,7 @@ header nav ul li a:after {
 /* ======================== footer ====================== */
 footer {
     /* background-color: var(--alt-color); */
-    height: 400px;
+    height: 300px;
 }
 
 #foot {
@@ -567,7 +568,7 @@ footer a:hover {
 .bottom-footer {
     background-color: var(--alt-color);
     padding: 20px;
-    margin-top: 160px;
+    margin-top: 100px;
     /* width: 100%; */
 }
 
@@ -882,6 +883,10 @@ footer a:hover {
 /* ===================== responsive 800px ======================= */
 
 @media only screen and (max-width: 800px ) {
+    /* .container {
+        height: 750px;
+    } */
+
     header nav {
         margin: auto 80px;
     }
@@ -905,6 +910,7 @@ footer a:hover {
         align-items: flex-start;
         justify-content: flex-start;
         background-color: var(--alt-color);
+        box-shadow: 2px 0px 10px rgba(0,0,0,.3);
         width: 0;
         height: 100vh;
         right: 0;
@@ -1738,7 +1744,7 @@ footer a:hover {
     /* ======================== footer ====================== */
     footer {
         /* background-color: var(--alt-color); */
-        margin-top: 400px;
+        margin-top: 100px;
         height: 400px;
     }
 
@@ -1765,7 +1771,7 @@ footer a:hover {
      .bottom-foot {
         display: flex;
         justify-content: space-between;
-        margin: auto 80px;
+        margin: auto 40px;
     }
 
     /* ============================= about us ======================== */
@@ -1956,7 +1962,7 @@ footer a:hover {
     }
     
     .project .kartu img {
-        margin: -60px -70px;
+        margin: -60px -75px;
         height: 350px;
         width: 350px;
     }
@@ -1964,7 +1970,7 @@ footer a:hover {
     .overlay img {
         height: 380px;
         margin-top: 70px;
-        margin-right: 200px;
+        margin-left: -5px;
     }
     
     
@@ -2050,7 +2056,7 @@ footer a:hover {
 
 
     .blog-input input {
-        width: 230px;
+        width: 220px;
     }
 
     .blog-input button {
