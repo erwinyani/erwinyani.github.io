@@ -1,5 +1,6 @@
 {
     "workbench.colorTheme": "Noctis Bordo",
     "editor.minimap.enabled": false,
-    "liveServer.settings.CustomBrowser": "firefox:PrivateMode"
+    "liveServer.settings.CustomBrowser": "firefox:PrivateMode",
+    "liveServer.settings.port": 5501
 }
