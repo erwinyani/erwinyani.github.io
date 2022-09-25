@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #21d4fd;
+    background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+    font-family: Helvetica, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .hoverme {
+    width: 240px;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+    position: relative;
+  }
+  .hoverme h1 {
+    color: #fff;
+    font-size: 1.5em;
+  }
+  .hoverme i {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 0;
+    width: 5px;
+    height: 10px;
+    background: red;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(1) {
+    transform: translate3d(-70px, -66px, 0) rotate(196deg);
+    background: #00c8ff;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(2) {
+    transform: translate3d(-83px, -74px, 0) rotate(46deg);
+    background: #ff00b3;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(3) {
+    transform: translate3d(-18px, 59px, 0) rotate(85deg);
+    background: #b300ff;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(4) {
+    transform: translate3d(33px, -95px, 0) rotate(276deg);
+    background: #bf00ff;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(5) {
+    transform: translate3d(-78px, 99px, 0) rotate(3deg);
+    background: #3c00ff;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(6) {
+    transform: translate3d(-51px, -72px, 0) rotate(230deg);
+    background: #00fffb;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(7) {
+    transform: translate3d(-41px, 48px, 0) rotate(29deg);
+    background: #0022ff;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(8) {
+    transform: translate3d(52px, -4px, 0) rotate(214deg);
+    background: #b7ff00;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(9) {
+    transform: translate3d(-3px, -54px, 0) rotate(320deg);
+    background: #ff4800;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(10) {
+    transform: translate3d(-62px, -24px, 0) rotate(264deg);
+    background: #ff3700;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(11) {
+    transform: translate3d(-77px, -51px, 0) rotate(206deg);
+    background: #4000ff;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(12) {
+    transform: translate3d(40px, 77px, 0) rotate(322deg);
+    background: #d5ff00;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(13) {
+    transform: translate3d(-3px, -52px, 0) rotate(177deg);
+    background: #ffb700;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(14) {
+    transform: translate3d(-46px, -25px, 0) rotate(263deg);
+    background: #2bff00;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(15) {
+    transform: translate3d(-77px, -63px, 0) rotate(175deg);
+    background: #bbff00;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(16) {
+    transform: translate3d(-17px, -52px, 0) rotate(196deg);
+    background: #ff0062;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(17) {
+    transform: translate3d(84px, 68px, 0) rotate(147deg);
+    background: #ff8400;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(18) {
+    transform: translate3d(-1px, 47px, 0) rotate(313deg);
+    background: #ff0066;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(19) {
+    transform: translate3d(42px, -68px, 0) rotate(349deg);
+    background: #6600ff;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(20) {
+    transform: translate3d(51px, -6px, 0) rotate(67deg);
+    background: #ffc400;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(21) {
+    transform: translate3d(73px, -54px, 0) rotate(144deg);
+    background: #00ffae;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(22) {
+    transform: translate3d(-11px, 73px, 0) rotate(66deg);
+    background: #ff8400;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(23) {
+    transform: translate3d(55px, 57px, 0) rotate(290deg);
+    background: #ff0066;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(24) {
+    transform: translate3d(30px, 50px, 0) rotate(255deg);
+    background: #ff5e00;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(25) {
+    transform: translate3d(61px, -53px, 0) rotate(283deg);
+    background: #ff006a;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(26) {
+    transform: translate3d(76px, 22px, 0) rotate(229deg);
+    background: #ff0062;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(27) {
+    transform: translate3d(-18px, 15px, 0) rotate(34deg);
+    background: #ff0073;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(28) {
+    transform: translate3d(6px, 43px, 0) rotate(151deg);
+    background: #0026ff;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(29) {
+    transform: translate3d(-11px, -31px, 0) rotate(252deg);
+    background: #b7ff00;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(30) {
+    transform: translate3d(-38px, -71px, 0) rotate(24deg);
+    background: #ff3700;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(31) {
+    transform: translate3d(-49px, 82px, 0) rotate(269deg);
+    background: #3cff00;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(32) {
+    transform: translate3d(-2px, -57px, 0) rotate(353deg);
+    background: #c8ff00;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(33) {
+    transform: translate3d(-34px, 59px, 0) rotate(299deg);
+    background: #d000ff;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(34) {
+    transform: translate3d(59px, 7px, 0) rotate(245deg);
+    background: #ff0400;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(35) {
+    transform: translate3d(-50px, 99px, 0) rotate(62deg);
+    background: #00ffc4;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(36) {
+    transform: translate3d(-13px, -21px, 0) rotate(64deg);
+    background: #7b00ff;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(37) {
+    transform: translate3d(-88px, 31px, 0) rotate(321deg);
+    background: #ff6a00;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(38) {
+    transform: translate3d(-20px, 87px, 0) rotate(203deg);
+    background: #00fbff;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(39) {
+    transform: translate3d(74px, 84px, 0) rotate(147deg);
+    background: #f2ff00;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(40) {
+    transform: translate3d(-8px, 83px, 0) rotate(44deg);
+    background: #00d9ff;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(41) {
+    transform: translate3d(-23px, 76px, 0) rotate(348deg);
+    background: #ff0011;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(42) {
+    transform: translate3d(69px, -22px, 0) rotate(109deg);
+    background: #e100ff;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(43) {
+    transform: translate3d(73px, -80px, 0) rotate(58deg);
+    background: #ff6200;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(44) {
+    transform: translate3d(-26px, 13px, 0) rotate(206deg);
+    background: #bbff00;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(45) {
+    transform: translate3d(-95px, -84px, 0) rotate(135deg);
+    background: #00ff1e;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(46) {
+    transform: translate3d(-14px, -24px, 0) rotate(124deg);
+    background: #ff005e;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(47) {
+    transform: translate3d(-35px, 33px, 0) rotate(26deg);
+    background: #80ff00;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(48) {
+    transform: translate3d(71px, -14px, 0) rotate(165deg);
+    background: #3300ff;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(49) {
+    transform: translate3d(32px, -28px, 0) rotate(228deg);
+    background: #ff0051;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  .hoverme:hover i:nth-of-type(50) {
+    transform: translate3d(14px, 82px, 0) rotate(148deg);
+    background: #ffd000;
+    animation: bang 700ms ease-out forwards;
+    opacity: 0;
+  }
+  
+  @keyframes bang {
+    from {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
