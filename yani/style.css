@@ -26,7 +26,7 @@ body, html{
 	background-image: url("back.jpeg");
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
 	.first--slide{
 		background-image: url("back1.jpeg");
 	}
@@ -602,7 +602,7 @@ body, html{
 
 .third--canvas .center--line{
 	position: absolute;
-	width:0%;
+	width: 0%;
 	height:5px;
 	background:#fff;
 	top:0;
@@ -642,7 +642,7 @@ body, html{
 	color:#1080f2;
 	text-transform: uppercase;
 	margin:0;
-	font-size:1.8em;
+	font-size:1.9em;
 }
 
 .third--canvas .center--line h3 > span{
