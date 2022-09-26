@@ -730,11 +730,13 @@ body, html{
 
 .third--canvas > img#gf1{
 	left:35%;
+	width: 70%;
 }
 
 .third--canvas > img#gf2{
-	left:45%;
-	bottom:2em;
+	right:45%;
+	top:2em;
+	width: 80%;
 	animation-delay: 4800ms;
 }
 
